@@ -9,38 +9,61 @@ fa_IR:
   js:
     poll:
       voters:
-        other: "رأی دهندگان"
+        one: voter
+        other: رأی دهندگان
       total_votes:
-        other: "مجموع آرا"
-      average_rating: "میانگین امتیاز:  <strong>%{average}</strong>."
+        one: total vote
+        other: مجموع آرا
+      average_rating: 'میانگین امتیاز:  <strong>%{average}</strong>.'
       public:
-        title: "آرا عمومی هستند"
+        title: آرا عمومی هستند
+      multiple:
+        help:
+          at_least_min_options:
+            one: Choose at least <strong>1</strong> option
+            other: Choose at least <strong>%{count}</strong> options
+          up_to_max_options:
+            one: Choose up to <strong>1</strong> option
+            other: Choose up to <strong>%{count}</strong> options
+          x_options:
+            one: Choose <strong>1</strong> option
+            other: Choose <strong>%{count}</strong> options
+          between_min_and_max_options: Choose between <strong>%{min}</strong> and <strong>%{max}</strong> options
       cast-votes:
-        title: "انداختن رأی شما"
-        label: "رای بدهید!"
+        title: انداختن رأی شما
+        label: رای بدهید!
       show-results:
-        title: "نتایج نظرسنجی را نمایش بده"
-        label: "نتایج را نشان بده"
+        title: نتایج نظرسنجی را نمایش بده
+        label: نتایج را نشان بده
       hide-results:
-        title: "برگشتن به رای گیری "
-        label: "نتایج را مخفی کن "
+        title: 'برگشتن به رای گیری '
+        label: 'نتایج را مخفی کن '
       open:
-        title: "نظرسنجی را باز کن "
-        label: "باز"
-        confirm: "آیا از باز کردن این نظرسنجی اطمینان دارید ؟ "
+        title: 'نظرسنجی را باز کن '
+        label: باز
+        confirm: 'آیا از باز کردن این نظرسنجی اطمینان دارید ؟ '
       close:
-        title: "نظرسنجی را ببند"
-        label: "بسته "
-        confirm: "آیا از بستن این نظرسنجی اطمینان دارید ؟ "
+        title: نظرسنجی را ببند
+        label: 'بسته '
+        confirm: 'آیا از بستن این نظرسنجی اطمینان دارید ؟ '
+      error_while_toggling_status: Sorry, there was an error toggling the status of this poll.
+      error_while_casting_votes: Sorry, there was an error casting your votes.
+      error_while_fetching_voters: Sorry, there was an error displaying the voters.
       ui_builder:
         title: ساخت نظرسنجی
+        insert: Insert Poll
+        help:
+          options_count: Enter at least 2 options
         poll_type:
           label: نوع
           regular: یک انتخاب
           multiple: انتخاب چندگانه
+          number: Number Rating
         poll_config:
           max: بیشترین
           min: کمترین
           step: مرحله
         poll_public:
           label: نشان دادن رای دهندگان
+        poll_options:
+          label: Enter one poll option per line

@@ -7,6 +7,6 @@
 
 it:
   site_settings:
-    enable_imgur: "Utilizza le api imgur per l'upload, non salvare file in locale"
-    imgur_client_id: "Il tuo ID utente imgur.com, necessario affinché funzioni il caricamento immagini"
-    imgur_client_secret: "La tua password imgur.com. Attualmente non richiesta affinché funzioni il caricamento immagini, ma potrebbe esserlo in futuro."
+    enable_imgur: Utilizza le api imgur per l'upload, non salvare file in locale
+    imgur_client_id: Il tuo ID utente imgur.com, necessario affinché funzioni il caricamento immagini
+    imgur_client_secret: La tua password imgur.com. Attualmente non richiesta affinché funzioni il caricamento immagini, ma potrebbe esserlo in futuro.

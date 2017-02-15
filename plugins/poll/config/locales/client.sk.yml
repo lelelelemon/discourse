@@ -9,51 +9,51 @@ sk:
   js:
     poll:
       voters:
-        one: "volič"
-        few: "voliči"
-        other: "voliči"
+        one: volič
+        other: voliči
+        few: voliči
       total_votes:
-        one: "hlas celkom"
-        few: "hlasy celkom"
-        other: "hlasov celkom"
-      average_rating: "Priemerné hodnotenie: <strong>%{average}</strong>."
+        one: hlas celkom
+        other: hlasov celkom
+        few: hlasy celkom
+      average_rating: 'Priemerné hodnotenie: <strong>%{average}</strong>.'
       public:
-        title: "Hlasy sú verejné."
+        title: Hlasy sú verejné.
       multiple:
         help:
           at_least_min_options:
-            one: "Vyberte aspoň <strong>1</strong> možnosť"
-            few: "Vyberte aspoň <strong>%{count}</strong> možnosti"
-            other: "Vyberte aspoň <strong>%{count}</strong> možností"
+            one: Vyberte aspoň <strong>1</strong> možnosť
+            other: Vyberte aspoň <strong>%{count}</strong> možností
+            few: Vyberte aspoň <strong>%{count}</strong> možnosti
           up_to_max_options:
-            one: "Vyberte najviac <strong>1</strong> možnosť"
-            few: "Vyberte najviac <strong>%{count}</strong> možnosti"
-            other: "Vyberte najviac <strong>%{count}</strong> možností"
+            one: Vyberte najviac <strong>1</strong> možnosť
+            other: Vyberte najviac <strong>%{count}</strong> možností
+            few: Vyberte najviac <strong>%{count}</strong> možnosti
           x_options:
-            one: "Vyberte <strong>1</strong> možnosť"
-            few: "Vyberte <strong>%{count}</strong> možnosti"
-            other: "Vyberte <strong>%{count}</strong> možností"
-          between_min_and_max_options: "Vyberte medzi <strong>%{min}</strong> a <strong>%{max}</strong> možnosťami"
+            one: Vyberte <strong>1</strong> možnosť
+            other: Vyberte <strong>%{count}</strong> možností
+            few: Vyberte <strong>%{count}</strong> možnosti
+          between_min_and_max_options: Vyberte medzi <strong>%{min}</strong> a <strong>%{max}</strong> možnosťami
       cast-votes:
-        title: "Hlasovať"
-        label: "Hlasuj teraz!"
+        title: Hlasovať
+        label: Hlasuj teraz!
       show-results:
-        title: "Zobraiť výsledky hlasovania"
-        label: "Zobraz výsledky"
+        title: Zobraiť výsledky hlasovania
+        label: Zobraz výsledky
       hide-results:
-        title: "Návrat na odovzdané hlasy"
-        label: "Skyť výsledky"
+        title: Návrat na odovzdané hlasy
+        label: Skyť výsledky
       open:
-        title: "Zahájiť hlasovanie"
-        label: "Zahájiť"
-        confirm: "Ste si istý, že chcete zahájiť toto hlasovanie?"
+        title: Zahájiť hlasovanie
+        label: Zahájiť
+        confirm: Ste si istý, že chcete zahájiť toto hlasovanie?
       close:
-        title: "Uzavrieť hlasovanie"
-        label: "Zavrieť"
-        confirm: "Ste si istý, že chcete uzavrieť toto hlasovanie?"
-      error_while_toggling_status: "Ľutujeme, nastala chyba pri prepínaní stavu tohto hlasovania."
-      error_while_casting_votes: "Ľutujeme, nastala chyba pri prideľovaní Vašich hlasov."
-      error_while_fetching_voters: "Ľutujeme, nastala chyba pri zobrazovaní voličov."
+        title: Uzavrieť hlasovanie
+        label: Zavrieť
+        confirm: Ste si istý, že chcete uzavrieť toto hlasovanie?
+      error_while_toggling_status: Ľutujeme, nastala chyba pri prepínaní stavu tohto hlasovania.
+      error_while_casting_votes: Ľutujeme, nastala chyba pri prideľovaní Vašich hlasov.
+      error_while_fetching_voters: Ľutujeme, nastala chyba pri zobrazovaní voličov.
       ui_builder:
         title: Vytvoriť hlasovanie
         insert: Vložiť hlasovanie

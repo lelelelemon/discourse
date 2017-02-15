@@ -13,9 +13,10 @@ id:
         delimiter: "."
       human:
         storage_units:
-          format: '%n %u'
+          format: "%n %u"
           units:
             byte:
+              one: Byte
               other: Bit
             gb: GB
             kb: KB
@@ -25,240 +26,267 @@ id:
         thousands: "{{number}}k"
         millions: "{{number}}M"
     dates:
-      time: "j:mm a"
-      timeline_date: "MMM YYYY"
-      long_no_year: "BBB H j:mm a"
-      long_no_year_no_time: "BBB H"
-      full_no_year_no_time: "MMMM Do"
-      long_with_year: "BBB H, TTTT j:mm a"
-      long_with_year_no_time: "BBB H, TTTT"
-      full_with_year_no_time: "MMMM Do, YYYY"
-      long_date_with_year: "BBB H, 'TT LT"
-      long_date_without_year: "BBB H, LT"
-      long_date_with_year_without_time: "BBB H, 'TT"
-      long_date_without_year_with_linebreak: "BBB H <br/>LT"
-      long_date_with_year_with_linebreak: "BBB H, 'TT <br/>LT"
+      time: j:mm a
+      timeline_date: MMM YYYY
+      long_no_year: BBB H j:mm a
+      long_no_year_no_time: BBB H
+      full_no_year_no_time: MMMM Do
+      long_with_year: BBB H, TTTT j:mm a
+      long_with_year_no_time: BBB H, TTTT
+      full_with_year_no_time: MMMM Do, YYYY
+      long_date_with_year: BBB H, 'TT LT
+      long_date_without_year: BBB H, LT
+      long_date_with_year_without_time: BBB H, 'TT
+      long_date_without_year_with_linebreak: BBB H <br/>LT
+      long_date_with_year_with_linebreak: BBB H, 'TT <br/>LT
       wrap_ago: "%{date} lalu"
       tiny:
         half_a_minute: "< 1m"
         less_than_x_seconds:
+          one: "< 1s"
           other: "< %{count}s"
         x_seconds:
+          one: 1s
           other: "%{count}s"
         x_minutes:
+          one: 1m
           other: "%{count}m"
         about_x_hours:
+          one: 1h
           other: "%{count}h"
         x_days:
+          one: 1d
           other: "%{count}d"
         about_x_years:
+          one: 1y
           other: "%{count}y"
         over_x_years:
+          one: "> 1y"
           other: "> %{count}y"
         almost_x_years:
+          one: 1y
           other: "%{count}y"
-        date_month: "BBB H"
-        date_year: "BBB 'TT"
+        date_month: BBB H
+        date_year: BBB 'TT
       medium:
         x_minutes:
+          one: 1 min
           other: "%{count} menit"
         x_hours:
+          one: 1 hour
           other: "%{count} jam"
         x_days:
+          one: 1 day
           other: "%{count} hari"
-        date_year: "BBB H, 'TT"
+        date_year: BBB H, 'TT
       medium_with_ago:
         x_minutes:
+          one: 1 min ago
           other: "%{count} menit yang lalu"
         x_hours:
+          one: 1 hour ago
           other: "%{count} jam yang lalu"
         x_days:
+          one: 1 day ago
           other: "%{count} hari yang lalu"
       later:
         x_days:
+          one: 1 day later
           other: "%{count} hari kemudian"
         x_months:
+          one: 1 month later
           other: "%{count} bulan kemudian"
         x_years:
+          one: 1 year later
           other: "%{count} bulan kemudian"
-      previous_month: 'Bulan Lalu'
-      next_month: 'Bulan Depan'
+      previous_month: Bulan Lalu
+      next_month: Bulan Depan
     share:
-      topic: 'share link ke topik ini'
+      topic: share link ke topik ini
       post: 'post #%{postNumber}'
-      close: 'tutup'
-      twitter: 'share link ini di Twitter'
-      facebook: 'share link ini di Facebook'
-      google+: 'share link ini di Google+'
-      email: 'kirim link ini melalui email'
+      close: tutup
+      twitter: share link ini di Twitter
+      facebook: share link ini di Facebook
+      google+: share link ini di Google+
+      email: kirim link ini melalui email
     action_codes:
-      public_topic: "membuat topik ini umum %{when}"
-      private_topic: "membuat topik ini pribadi %{when}"
-      split_topic: "pisahkan topik ini %{when}"
-      invited_user: "mengundang %{who} %{when}"
-      removed_user: "menghapus %{who} %{when}"
+      public_topic: membuat topik ini umum %{when}
+      private_topic: membuat topik ini pribadi %{when}
+      split_topic: pisahkan topik ini %{when}
+      invited_user: mengundang %{who} %{when}
+      invited_group: invited %{who} %{when}
+      removed_user: menghapus %{who} %{when}
+      removed_group: removed %{who} %{when}
       autoclosed:
-        enabled: 'ditutup %{when}'
-        disabled: 'dibuka %{when}'
+        enabled: ditutup %{when}
+        disabled: dibuka %{when}
       closed:
-        enabled: 'ditutup %{when}'
-        disabled: 'dibuka %{when}'
+        enabled: ditutup %{when}
+        disabled: dibuka %{when}
       archived:
-        enabled: 'diarsipkan %{when}'
-        disabled: 'tidak diarsipkan %{when}'
+        enabled: diarsipkan %{when}
+        disabled: tidak diarsipkan %{when}
       pinned:
-        enabled: 'disematkan %{when}'
-        disabled: 'tidak disematkan %{when}'
+        enabled: disematkan %{when}
+        disabled: tidak disematkan %{when}
       pinned_globally:
-        enabled: 'disematkan secara global %{when}'
-        disabled: 'tidak disematkan %{when}'
+        enabled: disematkan secara global %{when}
+        disabled: tidak disematkan %{when}
       visible:
-        enabled: 'terdaftar %{when}'
-        disabled: 'tidak terdaftar %{when}'
-    topic_admin_menu: "topik aksi admin"
-    emails_are_disabled: "Semua surel yang keluar telah dinonaktifkan oleh administrator. Tidak ada pemberitahuan email yang akan dikirimkan."
-    bootstrap_mode_enabled: "Untuk meluncurkan situs baru anda lebih mudah, anda masuk pada mode bootstrap. Semua pengguna baru akan diberikan kepercayaan di level 1 dan mempunyai email harian yang aktif diperbaharui secara singkat. Secara otomatis ini akan mati ketika jumlah pengguna melampaui %{min_users} hitungan pengguna."
-    bootstrap_mode_disabled: "Mode bootstrap akan di non aktifkan pada 24 jam berikutnya."
+        enabled: terdaftar %{when}
+        disabled: tidak terdaftar %{when}
+    topic_admin_menu: topik aksi admin
+    wizard_required: It's time to configure your forum! <a href='%{url}' data-auto-route='true'>Start the Setup Wizard</a>!
+    emails_are_disabled: Semua surel yang keluar telah dinonaktifkan oleh administrator. Tidak ada pemberitahuan email yang akan dikirimkan.
+    bootstrap_mode_enabled: Untuk meluncurkan situs baru anda lebih mudah, anda masuk pada mode bootstrap. Semua pengguna baru akan diberikan kepercayaan di level 1 dan mempunyai email harian yang aktif diperbaharui secara singkat. Secara otomatis ini akan mati ketika jumlah pengguna melampaui %{min_users} hitungan pengguna.
+    bootstrap_mode_disabled: Mode bootstrap akan di non aktifkan pada 24 jam berikutnya.
     s3:
       regions:
-        us_east_1: "US East (N. Virginia)"
-        us_west_1: "US West (N. California)"
-        us_west_2: "US West (Oregon)"
-        us_gov_west_1: "AWS GovCloud (US)"
-        eu_west_1: "EU (Ireland)"
-        eu_central_1: "EU (Frankfurt)"
-        ap_southeast_1: "Asia Pacific (Singapore)"
-        ap_southeast_2: "Asia Pacific (Sydney)"
-        ap_south_1: "Asia Pasifik (Mumbai)"
-        ap_northeast_1: "Asia Pacific (Tokyo)"
-        ap_northeast_2: "Asia Pacific (Seoul)"
-        sa_east_1: "South America (Sao Paulo)"
-        cn_north_1: "Cina (Beijing)"
-    edit: 'Ubah judul dan kategori topik ini'
-    not_implemented: "Maaf, fitur ini belum diimplementasikan."
-    no_value: "Tidak"
-    yes_value: "Ya"
-    generic_error: "Maaf, terjadi kesalahan."
-    generic_error_with_reason: "Terjadi kesalahan: %{error}"
-    sign_up: "Daftar"
-    log_in: "Log In"
-    age: "Umur"
-    joined: "Bergabung"
-    admin_title: "Admin"
-    flags_title: "Flags"
-    show_more: "tampilkan lebih banyak"
-    show_help: "pilihan"
-    links: "Tautan"
+        us_east_1: US East (N. Virginia)
+        us_west_1: US West (N. California)
+        us_west_2: US West (Oregon)
+        us_gov_west_1: AWS GovCloud (US)
+        eu_west_1: EU (Ireland)
+        eu_central_1: EU (Frankfurt)
+        ap_southeast_1: Asia Pacific (Singapore)
+        ap_southeast_2: Asia Pacific (Sydney)
+        ap_south_1: Asia Pasifik (Mumbai)
+        ap_northeast_1: Asia Pacific (Tokyo)
+        ap_northeast_2: Asia Pacific (Seoul)
+        sa_east_1: South America (Sao Paulo)
+        cn_north_1: Cina (Beijing)
+    edit: Ubah judul dan kategori topik ini
+    not_implemented: Maaf, fitur ini belum diimplementasikan.
+    no_value: Tidak
+    yes_value: Ya
+    generic_error: Maaf, terjadi kesalahan.
+    generic_error_with_reason: 'Terjadi kesalahan: %{error}'
+    sign_up: Daftar
+    log_in: Log In
+    age: Umur
+    joined: Bergabung
+    admin_title: Admin
+    flags_title: Flags
+    show_more: tampilkan lebih banyak
+    show_help: pilihan
+    links: Tautan
     links_lowercase:
-      other: "tautan"
-    faq: "FAQ"
-    guidelines: "Petunjuk"
-    privacy_policy: "Kebijakan Privasi"
-    privacy: "Privasi"
-    terms_of_service: "Ketentuan Layanan"
-    mobile_view: "Tampilan Mobile"
-    desktop_view: "Tampilan Desktop"
-    you: "Anda"
-    or: "atau"
-    now: "baru saja"
-    read_more: 'baca selengkapnya'
-    more: "Selengkapnya"
-    less: "Lebih Singkat"
-    never: "tidak pernah"
-    every_30_minutes: "setiap 30 menit"
-    every_hour: "setiap jam"
-    daily: "harian"
-    weekly: "mingguan"
-    every_two_weeks: "setiap dua minggu"
-    every_three_days: "setiap tiga hari"
-    max_of_count: "maksimal dari {{count}}"
-    alternation: "atau"
+      one: link
+      other: tautan
+    faq: FAQ
+    guidelines: Petunjuk
+    privacy_policy: Kebijakan Privasi
+    privacy: Privasi
+    terms_of_service: Ketentuan Layanan
+    mobile_view: Tampilan Mobile
+    desktop_view: Tampilan Desktop
+    you: Anda
+    or: atau
+    now: baru saja
+    read_more: baca selengkapnya
+    more: Selengkapnya
+    less: Lebih Singkat
+    never: tidak pernah
+    every_30_minutes: setiap 30 menit
+    every_hour: setiap jam
+    daily: harian
+    weekly: mingguan
+    every_two_weeks: setiap dua minggu
+    every_three_days: setiap tiga hari
+    max_of_count: maksimal dari {{count}}
+    alternation: atau
     character_count:
+      one: "{{count}} character"
       other: "{{count}} karakter"
     suggested_topics:
-      title: "Topik Yang Disarankan"
-      pm_title: "Pesan Yang  Disarankan"
+      title: Topik Yang Disarankan
+      pm_title: Pesan Yang  Disarankan
     about:
-      simple_title: "Tentang"
-      title: "Tentang %{title}"
-      stats: "Statistik Situs"
-      our_admins: "Admin Kami"
-      our_moderators: "Moderator Kami"
+      simple_title: Tentang
+      title: Tentang %{title}
+      stats: Statistik Situs
+      our_admins: Admin Kami
+      our_moderators: Moderator Kami
       stat:
-        all_time: "Sepanjang Waktu"
-        last_7_days: "7 Hari Terakhir"
-        last_30_days: "30 Hari Terakhir"
-      like_count: "Suka"
-      topic_count: "Topik"
-      post_count: "Pos"
-      user_count: "Pengguna Baru"
-      active_user_count: "Pengguna Aktif"
-      contact: "Kontak kami"
-      contact_info: "Pada kegiatan dari sebuah isu kritikal atau penting terjadi pada situs ini, silahkan kontak kami di %{contact_info}."
+        all_time: Sepanjang Waktu
+        last_7_days: 7 Hari Terakhir
+        last_30_days: 30 Hari Terakhir
+      like_count: Suka
+      topic_count: Topik
+      post_count: Pos
+      user_count: Users
+      active_user_count: Pengguna Aktif
+      contact: Kontak kami
+      contact_info: Pada kegiatan dari sebuah isu kritikal atau penting terjadi pada situs ini, silahkan kontak kami di %{contact_info}.
     bookmarked:
-      title: "Penandaan"
-      clear_bookmarks: "Bersihkan Penandaan"
+      title: Penandaan
+      clear_bookmarks: Bersihkan Penandaan
       help:
-        bookmark: "Klik untuk membuat penandaan pos pertama di topik ini"
-        unbookmark: "Klik untuk menghapus semua penandaan di topik ini"
+        bookmark: Klik untuk membuat penandaan pos pertama di topik ini
+        unbookmark: Klik untuk menghapus semua penandaan di topik ini
     bookmarks:
-      not_logged_in: "Maaf, anda harus masuk untuk menandai post"
-      created: "Anda telah menandai post ini"
-      not_bookmarked: "Anda telah membaca post ini; klik untuk menandainya"
-      last_read: "Ini adalah post terakhir yang anda baca; klik untuk menandainya"
-      remove: "Hilangkan penandaan"
-      confirm_clear: "Apakah anda yakin ingin membersihkan semua penandaan dari topik ini?"
+      not_logged_in: Maaf, anda harus masuk untuk menandai post
+      created: Anda telah menandai post ini
+      not_bookmarked: Anda telah membaca post ini; klik untuk menandainya
+      last_read: Ini adalah post terakhir yang anda baca; klik untuk menandainya
+      remove: Hilangkan penandaan
+      confirm_clear: Apakah anda yakin ingin membersihkan semua penandaan dari topik ini?
     topic_count_latest:
+      one: "{{count}} new or updated topic."
       other: "{{count}} topik baru atau diperbarui."
     topic_count_unread:
+      one: "{{count}} unread topic."
       other: "{{count}} topik belum dibaca."
     topic_count_new:
+      one: "{{count}} new topic."
       other: "{{count}} topik baru."
-    click_to_show: "Klik untuk menampilkan"
-    preview: "pratinjau"
-    cancel: "batal"
-    save: "Simpan Perubahan"
-    saving: "Menyimpan..."
-    saved: "Tersimpan!"
-    upload: "Unggah"
-    uploading: "Mengunggah..."
-    uploading_filename: "Sedang Mengunggah {{filename}}..."
-    uploaded: "Sudah Diunggah!"
-    enable: "Aktifkan"
-    disable: "Nonaktifkan"
-    undo: "Batalkan perintah"
-    revert: "Kembali ke awal"
-    failed: "Gagal"
-    switch_to_anon: "Masuki Mode Anonim"
-    switch_from_anon: "Keluar Mode Anonim"
+    click_to_show: Klik untuk menampilkan
+    preview: pratinjau
+    cancel: batal
+    save: Simpan Perubahan
+    saving: Menyimpan...
+    saved: Tersimpan!
+    upload: Unggah
+    uploading: Mengunggah...
+    uploading_filename: Sedang Mengunggah {{filename}}...
+    uploaded: Sudah Diunggah!
+    enable: Aktifkan
+    disable: Nonaktifkan
+    undo: Batalkan perintah
+    revert: Kembali ke awal
+    failed: Gagal
+    switch_to_anon: Masuki Mode Anonim
+    switch_from_anon: Keluar Mode Anonim
     banner:
-      close: "Abaikan banner ini."
-      edit: "Ubah banner ini >>"
+      close: Abaikan banner ini.
+      edit: Ubah banner ini >>
     choose_topic:
-      none_found: "Tidak ada topik ditemukan."
+      none_found: Tidak ada topik ditemukan.
       title:
-        search: "Cari Topik berdasarkan nama, url atau id:"
-        placeholder: "tulis judul topik disini"
+        search: 'Cari Topik berdasarkan nama, url atau id:'
+        placeholder: tulis judul topik disini
     queue:
-      topic: "Topik:"
-      approve: 'Terima'
-      reject: 'Tolak'
-      delete_user: 'Hapus Pengguna'
-      title: "Membutuhan Persetujuan"
-      none: "Tidak ada pos untuk di pratinjau."
-      edit: "Ubah"
-      cancel: "Batal"
-      view_pending: "lihat postingan tertunda"
+      topic: 'Topik:'
+      approve: Terima
+      reject: Tolak
+      delete_user: Hapus Pengguna
+      title: Membutuhan Persetujuan
+      none: Tidak ada pos untuk di pratinjau.
+      edit: Ubah
+      cancel: Batal
+      view_pending: lihat postingan tertunda
       has_pending_posts:
-        other: "Bahasan ini <b>{{count}}</b> pesan menunggu persetujuan"
-      confirm: "Simpan perubahan"
-      delete_prompt: "Apakah anda yakin akan menghapus <b>%{username}</b> ? Ini akan menghapus semua pesan dan memblokir email dan alamat IP. "
+        one: This topic has <b>1</b> post awaiting approval
+        other: Bahasan ini <b>{{count}}</b> pesan menunggu persetujuan
+      confirm: Simpan perubahan
+      delete_prompt: 'Apakah anda yakin akan menghapus <b>%{username}</b> ? Ini akan menghapus semua pesan dan memblokir email dan alamat IP. '
       approval:
-        title: "Pesan Membutuhkan Persetujuan"
-        description: "Kami telah menerima posting baru Anda, tetapi diperlukan persetujuan dari moderator sebelum posting tersebut tampil. Mohon kesabarannya. Terima kasih!"
+        title: Pesan Membutuhkan Persetujuan
+        description: Kami telah menerima posting baru Anda, tetapi diperlukan persetujuan dari moderator sebelum posting tersebut tampil. Mohon kesabarannya. Terima kasih!
         pending_posts:
-          other: "Anda mempunyai <strong>{{count}}</strong> pesan tertunda."
-        ok: "Ya"
+          one: You have <strong>1</strong> post pending.
+          other: Anda mempunyai <strong>{{count}}</strong> pesan tertunda.
+        ok: Ya
     user_action:
       user_posted_topic: "<a href='{{userUrl}}'>{{user}}</a> memposting <a href='{{topicUrl}}'>topik</a>"
       you_posted_topic: "<a href='{{userUrl}}'>Anda</a> memposting <a href='{{topicUrl}}'>the topic</a>"
@@ -269,554 +297,2844 @@ id:
       user_mentioned_user: "<a href='{{user1Url}}'>{{user}}</a> menandai <a href='{{user2Url}}'>{{another_user}}</a>"
       user_mentioned_you: "<a href='{{user1Url}}'>{{user}}</a> menandai <a href='{{user2Url}}'>Anda</a>"
       you_mentioned_user: "<a href='{{user1Url}}'>Anda</a> menandai <a href='{{user2Url}}'>{{another_user}}</a>"
-      posted_by_user: "Dikirim oleh <a href='{{userUrl}}'>{{user}}</a>"
-      posted_by_you: "Dikirim oleh <a href='{{userUrl}}'>Anda</a>"
-      sent_by_user: "Dikirim oleh <a href='{{userUrl}}'>{{user}}</a>"
-      sent_by_you: "Dikirim oleh <a href='{{userUrl}}'>kamu</a>"
+      posted_by_user: Dikirim oleh <a href='{{userUrl}}'>{{user}}</a>
+      posted_by_you: Dikirim oleh <a href='{{userUrl}}'>Anda</a>
+      sent_by_user: Dikirim oleh <a href='{{userUrl}}'>{{user}}</a>
+      sent_by_you: Dikirim oleh <a href='{{userUrl}}'>kamu</a>
     directory:
-      filter_name: "Menyaring dari nama pengguna"
-      title: "Pengguna"
-      likes_given: "Mendapatkan"
-      likes_received: "Menerima"
-      topics_entered: "Dilihat"
-      topics_entered_long: "Topik dilihat"
-      time_read: "Waktu baca"
-      topic_count: "Topik-topik"
-      topic_count_long: "Topik dibuat"
-      post_count: "Balasan"
-      post_count_long: "Pesan Terbalas"
-      no_results: "Tidak ada hasil yang ditemukan."
-      days_visited: "mengunjungi"
-      days_visited_long: "Hari yang dikunjungi"
-      posts_read: "baca"
+      filter_name: Menyaring dari nama pengguna
+      title: Pengguna
+      likes_given: Mendapatkan
+      likes_received: Menerima
+      topics_entered: Dilihat
+      topics_entered_long: Topik dilihat
+      time_read: Waktu baca
+      topic_count: Topik-topik
+      topic_count_long: Topik dibuat
+      post_count: Balasan
+      post_count_long: Pesan Terbalas
+      no_results: Tidak ada hasil yang ditemukan.
+      days_visited: mengunjungi
+      days_visited_long: Hari yang dikunjungi
+      posts_read: baca
+      posts_read_long: Posts Read
       total_rows:
+        one: 1 user
         other: "%{count} pengguna"
+    group_histories:
+      actions:
+        change_group_setting: Change group setting
+        add_user_to_group: Add user
+        remove_user_from_group: Remove user
+        make_user_group_owner: Make owner
+        remove_user_as_group_owner: Revoke owner
     groups:
-      add: "Menambahkan"
-      selector_placeholder: "Menambahkan anggota"
-      owner: "pemilik"
-      visible: "Grup terlihat oleh semua pengguna"
+      logs:
+        title: Logs
+        when: When
+        action: Action
+        acting_user: Acting user
+        target_user: Target user
+        subject: Subject
+        details: Details
+        from: From
+        to: To
+      edit:
+        title: Edit Group
+        full_name: Full Name
+        add_members: Add Members
+        delete_member_confirm: Remove '%{username}' from the '%{group}' group?
+      request_membership_pm:
+        title: Membership Request
+        body: I would like to apply for membership in @%{groupName}.
+      name_placeholder: Group name, no spaces, same as username rule
+      public: Allow users to join/leave the group freely (Requires group to be visible)
+      empty:
+        posts: There are no posts by members of this group.
+        members: There are no members in this group.
+        mentions: There are no mentions of this group.
+        messages: There are no messages for this group.
+        topics: There are no topics by members of this group.
+        logs: There are no logs for this group.
+      add: Menambahkan
+      join: Join Group
+      leave: Leave Group
+      request: Request to Join Group
+      automatic_group: Automatic Group
+      closed_group: Closed Group
+      is_group_user: You are a member of this group
+      allow_membership_requests: Allow users to send membership requests to group owners (Requires everyone to be able to mention the group)
+      membership: Membership
+      name: Name
+      user_count: Number of Members
+      bio: About Group
+      selector_placeholder: Menambahkan anggota
+      owner: pemilik
+      visible: Grup terlihat oleh semua pengguna
+      index:
+        title: Groups
+        empty: There are no visible groups.
       title:
-        other: "Grup"
-      members: "Anggota"
-      topics: "Topik-topik"
-      posts: "Post"
-      mentions: "Balasan-balasan"
-      messages: "Pesan-pesan"
+        one: group
+        other: Grup
+      activity: Activity
+      members: Anggota
+      topics: Topik-topik
+      posts: Post
+      mentions: Balasan-balasan
+      messages: Pesan-pesan
       alias_levels:
-        title: "Siapa yang mendapat pesan dan membalas kelompok ini?"
-        nobody: "Tak seorangpun"
-        only_admins: "Hanya admin"
-        mods_and_admins: "Hanya moderator dan Admin"
-        members_mods_and_admins: "Hanya anggota grup, moderator dan admin"
-        everyone: "Semua orang"
+        title: Siapa yang mendapat pesan dan membalas kelompok ini?
+        nobody: Tak seorangpun
+        only_admins: Hanya admin
+        mods_and_admins: Hanya moderator dan Admin
+        members_mods_and_admins: Hanya anggota grup, moderator dan admin
+        everyone: Semua orang
       trust_levels:
-        title: "Tingkat kepercayaan otomatis diberikan kepada anggota ketika mereka ditambahkan:"
-        none: "Tidak ada"
+        title: 'Tingkat kepercayaan otomatis diberikan kepada anggota ketika mereka ditambahkan:'
+        none: Tidak ada
       notifications:
         watching:
-          title: "Melihat"
-          description: "Anda akan diberitahu setiap posting baru di setiap pesan, dan jumlah balasan baru akan ditampilkan."
+          title: Melihat
+          description: Anda akan diberitahu setiap posting baru di setiap pesan, dan jumlah balasan baru akan ditampilkan.
+        watching_first_post:
+          title: Watching First Post
+          description: You will only be notified of the first post in each new topic in this group.
         tracking:
-          title: "melacak"
-          description: "Anda akan diberitahu jika seseorang membalas anda @name atau balasan untuk anda, dan jumlah balasan baru akan ditampilkan. "
+          title: melacak
+          description: 'Anda akan diberitahu jika seseorang membalas anda @name atau balasan untuk anda, dan jumlah balasan baru akan ditampilkan. '
         regular:
-          title: "normal"
-          description: "Anda akan diberitahu jika seseorang membalas anda @name atau balasan untuk anda."
+          title: normal
+          description: Anda akan diberitahu jika seseorang membalas anda @name atau balasan untuk anda.
         muted:
-          title: "meredam"
-          description: "Anda tidak akan pernah diberitahu apapun tentang topik baru pada kelompok ini."
+          title: meredam
+          description: Anda tidak akan pernah diberitahu apapun tentang topik baru pada kelompok ini.
+      flair_url: Avatar Flair Image
+      flair_url_placeholder: "(Optional) Image URL or Font Awesome class"
+      flair_bg_color: Avatar Flair Background Color
+      flair_bg_color_placeholder: "(Optional) Hex color value"
+      flair_color: Avatar Flair Color
+      flair_color_placeholder: "(Optional) Hex color value"
+      flair_preview_icon: Preview Icon
+      flair_preview_image: Preview Image
+      flair_note: 'Note: Flair will only show for a user''s primary group.'
     user_action_groups:
-      '1': "Likes Diberikan"
-      '2': "Likes Diterima"
-      '3': "Markah"
-      '4': "Topik"
-      '5': "balasan"
-      '6': "tanggapan"
-      '7': "Disebutkan"
-      '9': "Kutipan"
-      '11': "Edit"
-      '12': "Item Terkirim"
-      '13': "Kotak masuk"
-      '14': "tertunda"
+      '1': Likes Diberikan
+      '2': Likes Diterima
+      '3': Markah
+      '4': Topik
+      '5': balasan
+      '6': tanggapan
+      '7': Disebutkan
+      '9': Kutipan
+      '11': Edit
+      '12': Item Terkirim
+      '13': Kotak masuk
+      '14': tertunda
     categories:
-      all: "Semua kategori"
-      all_subcategories: "Semua"
-      no_subcategory: "Tak ada"
-      category: "Kategori"
-      category_list: "Tampilan daftar kategori"
+      all: Semua kategori
+      all_subcategories: Semua
+      no_subcategory: Tak ada
+      category: Kategori
+      category_list: Tampilan daftar kategori
       reorder:
-        title: "memesan ulang kategori"
-        title_long: "Mengatur ulang daftar kategori"
-        fix_order: "Posisi yang tepat"
-        fix_order_tooltip: "Tidak semua kategori mempunyai angka posisi yang unik, yang mana dapat menyebabkan hasil yang tidak diharapkan."
-        save: "menyimpan pesanan"
-        apply_all: "menerapkan"
-        position: "Posisi"
-      posts: "Post"
-      topics: "Topik"
-      latest: "Terbaru"
-      latest_by: "Terbaru oleh"
-      toggle_ordering: "beralih memesan kontrol"
-      subcategories: "Subkategori"
+        title: memesan ulang kategori
+        title_long: Mengatur ulang daftar kategori
+        fix_order: Posisi yang tepat
+        fix_order_tooltip: Tidak semua kategori mempunyai angka posisi yang unik, yang mana dapat menyebabkan hasil yang tidak diharapkan.
+        save: menyimpan pesanan
+        apply_all: menerapkan
+        position: Posisi
+      posts: Post
+      topics: Topik
+      latest: Terbaru
+      latest_by: Terbaru oleh
+      toggle_ordering: beralih memesan kontrol
+      subcategories: Subkategori
       topic_sentence:
+        one: 1 topic
         other: "%{count} topik"
       topic_stat_sentence:
+        one: "%{count} new topic in the past %{unit}."
         other: "%{count} topik baru dalam %{unit} terakhir."
     ip_lookup:
       title: Pencarian Alamat IP
       hostname: nama host
       location: Lokasi
-      location_not_found: (tidak diketahui)
+      location_not_found: "(tidak diketahui)"
       organisation: Organisasi
       phone: Telepon
-      other_accounts: "Akun lain dengan alamat IP ini: "
-      delete_other_accounts: "Hapus %{count}"
-      username: "username"
-      trust_level: "TL"
-      read_time: "waktu baca"
-      topics_entered: "memasuki topik"
+      other_accounts: 'Akun lain dengan alamat IP ini: '
+      delete_other_accounts: Hapus %{count}
+      username: username
+      trust_level: TL
+      read_time: waktu baca
+      topics_entered: memasuki topik
       post_count: "# post"
-      confirm_delete_other_accounts: "Apakah Anda yakin  untuk menghapus akun ini?"
+      confirm_delete_other_accounts: Apakah Anda yakin  untuk menghapus akun ini?
     user_fields:
       none: "(memilih sebuah pilihan)"
     user:
       said: "{{username}}:"
-      profile: "Profil"
-      mute: "Redam"
-      edit: "Ubah Preferensi"
-      new_private_message: "Pesan Baru"
-      private_message: "pesan"
-      private_messages: "Messages"
-      activity_stream: "Activity"
-      preferences: "Preferensi"
-      expand_profile: "meluas"
-      bookmarks: "Markah"
-      bio: "About me"
-      invited_by: "Diundang oleh"
-      trust_level: "Tingkat Kepercayaan"
-      notifications: "Pemberitahuan"
-      statistics: "Statistik"
+      profile: Profil
+      mute: Redam
+      edit: Ubah Preferensi
+      download_archive:
+        button_text: Download My Posts
+        confirm: Are you sure you want to download your posts?
+        success: Download initiated, you will be notified via message when the process is complete.
+        rate_limit_error: Posts can be downloaded once per day, please try again tomorrow.
+      new_private_message: Pesan Baru
+      private_message: pesan
+      private_messages: Messages
+      activity_stream: Activity
+      preferences: Preferensi
+      expand_profile: meluas
+      bookmarks: Markah
+      bio: About me
+      invited_by: Diundang oleh
+      trust_level: Tingkat Kepercayaan
+      notifications: Pemberitahuan
+      statistics: Statistik
       desktop_notifications:
-        label: "pemberitahuan dekstop"
-        not_supported: "Pemberitahuan tidak didukung pada browser ini. Maaf."
-        perm_default: "Aktifkan Pemberitahuan"
-        perm_denied_btn: "Izin ditolak"
-        perm_denied_expl: "Anda menolak izin untuk pemberitahuan. Izinkan pemberitahuan melalui pengaturan browser anda."
-        disable: "Tidak membolehkan Notifikasi"
-        enable: "Membolehkan Notifikasi"
-        each_browser_note: "Catatan : Anda  harus mengubah pengaturan ini pada setiap browser yang Anda gunakan."
-      dismiss_notifications_tooltip: "Tandai semua notifikasi belum dibaca telah dibaca"
-      disable_jump_reply: "Jangan pindah ke kiriman saya setelah saya balas"
-      dynamic_favicon: "Tampilkan jumlah topik baru / pembaharuan pada icon browser."
-      external_links_in_new_tab: "Buka semua link eksternal ke dalam tab baru"
-      enable_quoting: "Aktifkan balasan kutipan untuk teks yang disorot"
-      change: "ubah"
+        label: pemberitahuan dekstop
+        not_supported: Pemberitahuan tidak didukung pada browser ini. Maaf.
+        perm_default: Aktifkan Pemberitahuan
+        perm_denied_btn: Izin ditolak
+        perm_denied_expl: Anda menolak izin untuk pemberitahuan. Izinkan pemberitahuan melalui pengaturan browser anda.
+        disable: Tidak membolehkan Notifikasi
+        currently_enabled: ''
+        enable: Membolehkan Notifikasi
+        currently_disabled: ''
+        each_browser_note: 'Catatan : Anda  harus mengubah pengaturan ini pada setiap browser yang Anda gunakan.'
+      dismiss_notifications: Dismiss All
+      dismiss_notifications_tooltip: Tandai semua notifikasi belum dibaca telah dibaca
+      first_notification: Your first notification! Select it to begin.
+      disable_jump_reply: Jangan pindah ke kiriman saya setelah saya balas
+      dynamic_favicon: Tampilkan jumlah topik baru / pembaharuan pada icon browser.
+      external_links_in_new_tab: Buka semua link eksternal ke dalam tab baru
+      enable_quoting: Aktifkan balasan kutipan untuk teks yang disorot
+      change: ubah
       moderator: "{{user}} adalah moderator"
       admin: "{{user}} adalah admin"
-      moderator_tooltip: "Pengguna ini adalah moderator"
-      admin_tooltip: "Pengguna ini adalah admin"
-      blocked_tooltip: "Pengguna ini yang diblokir"
-      suspended_notice: "Pengguna ini ditangguhkan sampai {{date}}"
-      suspended_reason: "Alasan:"
-      github_profile: "Github"
-      email_activity_summary: "Jumlah aktifitas"
+      moderator_tooltip: Pengguna ini adalah moderator
+      admin_tooltip: Pengguna ini adalah admin
+      blocked_tooltip: Pengguna ini yang diblokir
+      suspended_notice: Pengguna ini ditangguhkan sampai {{date}}
+      suspended_reason: 'Alasan:'
+      github_profile: Github
+      email_activity_summary: Jumlah aktifitas
       mailing_list_mode:
-        label: "mode milis"
-        enabled: "Aktifkan mode milis"
-        daily: "mengirim pembaharuan harian"
-        individual: "Kirim email untuk setiap pesan baru"
-        few_per_day: "Kirim saya surel untuk setiap postingan baru (sekitar 2 per hari)"
-      watched_categories: "Dilihat"
-      tracked_categories: "Dilacak"
-      muted_categories: "Diredam"
-      muted_categories_instructions: "Anda tidak akan diberitahu apapun tentang topik baru di kategori ini, dan mereka tidak akan muncul diterbarunya. "
-      delete_account: "Hapus Akun Saya"
-      delete_account_confirm: "Apakah Anda yakin untuk menghapus akun ini secara permanen? Perintah ini tidak dapat dibatalkan!"
-      deleted_yourself: "Akun Anda telah sukses dihapus."
-      delete_yourself_not_allowed: "Anda tidak dapat menghapus akun. Hubungi admin untuk menghapus akun Anda."
-      unread_message_count: "Pesan"
-      admin_delete: "Hapus"
-      users: "Pengguna"
-      muted_users: "Diredam"
-      muted_users_instructions: "Menekan semua pemberitahuan dari semua pengguna."
-      muted_topics_link: "Menampilkan topik yang diredam"
-      apps: "Aplikasi"
+        label: mode milis
+        enabled: Aktifkan mode milis
+        instructions: |
+          This setting overrides the activity summary.<br />
+          Muted topics and categories are not included in these emails.
+        daily: mengirim pembaharuan harian
+        individual: Kirim email untuk setiap pesan baru
+        individual_no_echo: Send an email for every new post except my own
+        many_per_day: Send me an email for every new post (about {{dailyEmailEstimate}} per day)
+        few_per_day: Kirim saya surel untuk setiap postingan baru (sekitar 2 per hari)
+      tag_settings: Tags
+      watched_tags: Watched
+      watched_tags_instructions: You will automatically watch all topics with these tags. You will be notified of all new posts and topics, and a count of new posts will also appear next to the topic.
+      tracked_tags: Tracked
+      tracked_tags_instructions: You will automatically track all topics with these tags. A count of new posts will appear next to the topic.
+      muted_tags: Muted
+      muted_tags_instructions: You will not be notified of anything about new topics with these tags, and they will not appear in latest.
+      watched_categories: Dilihat
+      watched_categories_instructions: You will automatically watch all topics in these categories. You will be notified of all new posts and topics, and a count of new posts will also appear next to the topic.
+      tracked_categories: Dilacak
+      tracked_categories_instructions: You will automatically track all topics in these categories. A count of new posts will appear next to the topic.
+      watched_first_post_categories: Watching First Post
+      watched_first_post_categories_instructions: You will be notified of the first post in each new topic in these categories.
+      watched_first_post_tags: Watching First Post
+      watched_first_post_tags_instructions: You will be notified of the first post in each new topic with these tags.
+      muted_categories: Diredam
+      muted_categories_instructions: 'Anda tidak akan diberitahu apapun tentang topik baru di kategori ini, dan mereka tidak akan muncul diterbarunya. '
+      delete_account: Hapus Akun Saya
+      delete_account_confirm: Apakah Anda yakin untuk menghapus akun ini secara permanen? Perintah ini tidak dapat dibatalkan!
+      deleted_yourself: Akun Anda telah sukses dihapus.
+      delete_yourself_not_allowed: Anda tidak dapat menghapus akun. Hubungi admin untuk menghapus akun Anda.
+      unread_message_count: Pesan
+      admin_delete: Hapus
+      users: Pengguna
+      muted_users: Diredam
+      muted_users_instructions: Menekan semua pemberitahuan dari semua pengguna.
+      muted_topics_link: Menampilkan topik yang diredam
+      watched_topics_link: Show watched topics
+      automatically_unpin_topics: Automatically unpin topics when I reach the bottom.
+      apps: Aplikasi
+      revoke_access: Revoke Access
+      undo_revoke_access: Undo Revoke Access
+      api_approved: 'Approved:'
       staff_counters:
-        deleted_posts: "menghapus posting"
-        suspensions: "penangguhan"
-        warnings_received: "peringatan"
+        flags_given: helpful flags
+        flagged_posts: flagged posts
+        deleted_posts: menghapus posting
+        suspensions: penangguhan
+        warnings_received: peringatan
       messages:
-        all: "Semua"
-        inbox: "Kotak Masuk"
-        sent: "Mengirim"
-        archive: "Arsip"
-        groups: "Kelompok Saya"
-        bulk_select: "Pilih Pesan"
-        move_to_inbox: "Pindah ke Kotak Masuk"
-        move_to_archive: "Arsip"
-        failed_to_move: "Gagal memindahkan pesan terpilih (mungkin internet kamu putus ?)"
-        select_all: "Pilih Semua"
+        all: Semua
+        inbox: Kotak Masuk
+        sent: Mengirim
+        archive: Arsip
+        groups: Kelompok Saya
+        bulk_select: Pilih Pesan
+        move_to_inbox: Pindah ke Kotak Masuk
+        move_to_archive: Arsip
+        failed_to_move: Gagal memindahkan pesan terpilih (mungkin internet kamu putus ?)
+        select_all: Pilih Semua
       change_password:
         success: "(surel terkirim)"
         in_progress: "(mengirimkan surel)"
         error: "(galat)"
-        action: "Kirim Email Reset Kata Sandi"
-        set_password: "Atur Kata Sandi"
+        action: Kirim Email Reset Kata Sandi
+        set_password: Atur Kata Sandi
+        choose_new: Choose a new password
+        choose: Choose a password
       change_about:
-        title: "Ganti Tentang Saya"
-        error: "Ada kesalahan saat mengganti nilai ini"
+        title: Ganti Tentang Saya
+        error: Ada kesalahan saat mengganti nilai ini
       change_username:
-        title: "Ganti Username"
-        taken: "Maaf, username tersebut sudah ada yang menggunakan"
-        error: "Terjadi kesalahan saat mengganti username anda"
-        invalid: "Username tersebut tidak valid. Username harus berupa angka dan huruf"
+        title: Ganti Username
+        confirm: If you change your username, all prior quotes of your posts and @name mentions will be broken. Are you absolutely sure you want to?
+        taken: Maaf, username tersebut sudah ada yang menggunakan
+        error: Terjadi kesalahan saat mengganti username anda
+        invalid: Username tersebut tidak valid. Username harus berupa angka dan huruf
       change_email:
-        title: "Ganti Alamat Surel"
-        taken: "Maaf, alamat surel tersebut tidak tersedia."
-        error: "Ada kesalahan dalam merubah alamat email Anda. Alamat ini telah digunakan oleh pengguna lain?"
-        success: "Kami telah mengirimkan surel kepada alamat itu. Silahkan mengikuti petunjuk konfirmasi didalamnya."
+        title: Ganti Alamat Surel
+        taken: Maaf, alamat surel tersebut tidak tersedia.
+        error: Ada kesalahan dalam merubah alamat email Anda. Alamat ini telah digunakan oleh pengguna lain?
+        success: Kami telah mengirimkan surel kepada alamat itu. Silahkan mengikuti petunjuk konfirmasi didalamnya.
       change_avatar:
-        title: "Ganti gambar profil anda"
+        title: Ganti gambar profil anda
         gravatar: "<a href='//gravatar.com/emails' target='_blank'>Gravatar</a>, berdasarkan "
-        gravatar_title: "Ganti avatar anda di website Gravatar"
-        refresh_gravatar_title: "Segarkan Gravatas kamu"
-        uploaded_avatar: "Gambar kustom"
-        uploaded_avatar_empty: "Tambah gambar kustom"
-        upload_title: "Unggah gambar anda"
-        upload_picture: "Unggah Gambar"
-        image_is_not_a_square: "Peringatan: kami telah memotong gambar anda; lebar dan tinggi tidak sama."
-        cache_notice: "Anda telah sukses mengganti gambar profil, tetapi mungkin akan memerlukan waktu untuk tampil karena cache peramban"
+        gravatar_title: Ganti avatar anda di website Gravatar
+        refresh_gravatar_title: Segarkan Gravatas kamu
+        letter_based: System assigned profile picture
+        uploaded_avatar: Gambar kustom
+        uploaded_avatar_empty: Tambah gambar kustom
+        upload_title: Unggah gambar anda
+        upload_picture: Unggah Gambar
+        image_is_not_a_square: 'Peringatan: kami telah memotong gambar anda; lebar dan tinggi tidak sama.'
+        cache_notice: Anda telah sukses mengganti gambar profil, tetapi mungkin akan memerlukan waktu untuk tampil karena cache peramban
       change_profile_background:
-        title: "Latar Belakang Profil"
-        instructions: "Latar belakang profil akan ditengahkan, dan mempunyai lebar standar 850px"
+        title: Latar Belakang Profil
+        instructions: Latar belakang profil akan ditengahkan, dan mempunyai lebar standar 850px
       change_card_background:
-        title: "Latar Belakang Kartu Penguna"
-        instructions: "Gambar latar belakang akan ditengahkan dan mempunyai lebar standar 590px"
+        title: Latar Belakang Kartu Penguna
+        instructions: Gambar latar belakang akan ditengahkan dan mempunyai lebar standar 590px
       email:
-        title: "Surel"
-        instructions: "Tidak pernah ditampilkan ke publik"
-        ok: "Kami akan mengirimkan surel kepada anda untuk konfirmasi"
-        invalid: "Silahkan masukkan alamat email yang valid"
-        authenticated: "Email anda sudah dikonfirmasi oleh {{provider}}"
+        title: Surel
+        instructions: never shown to the public
+        ok: Kami akan mengirimkan surel kepada anda untuk konfirmasi
+        invalid: Silahkan masukkan alamat email yang valid
+        authenticated: Email anda sudah dikonfirmasi oleh {{provider}}
+        frequency_immediately: We'll email you immediately if you haven't read the thing we're emailing you about.
         frequency:
-          other: "Kami akan mengirimkan email kepada anda jika kami tidak melihat anda selama {{count}} menit."
+          one: We'll only email you if we haven't seen you in the last minute.
+          other: Kami akan mengirimkan email kepada anda jika kami tidak melihat anda selama {{count}} menit.
       name:
-        title: "Name"
-        instructions: "Nama lengkap anda (pilihan)"
-        instructions_required: "Nama lengkap anda"
-        too_short: "Nama anda terlalu pendek"
-        ok: "Nama anda terlihat bagus"
+        title: Name
+        instructions: your full name (optional)
+        instructions_required: Nama lengkap anda
+        too_short: Nama anda terlalu pendek
+        ok: Nama anda terlihat bagus
       username:
-        title: "Nama Pengguna"
-        instructions: "Unik, tanpa spasi, pendek"
-        short_instructions: "Orang dapat menyebut anda sebagai @{{username}}"
-        available: "Nama pengguna anda tersedia"
-        global_match: "Surel cocok dengan nama pengguna yang terdaftar"
-        global_mismatch: "Sudah terdaftar. Coba {{suggestion}}?"
-        not_available: "Tidak tersedia. Coba {{suggestion}}?"
-        too_short: "Nama pengguna anda terlalu pendek"
-        too_long: "Nama pengguna anda terlalu panjang"
-        checking: "Memeriksa ketersediaan nama pengguna..."
-        enter_email: 'Nama pengguna ditemukan; masukkan surel yang cocok'
-        prefilled: "Surel cocok dengan nama pengguna yang terdaftar"
+        title: Nama Pengguna
+        instructions: unique, no spaces, short
+        short_instructions: Orang dapat menyebut anda sebagai @{{username}}
+        available: Nama pengguna anda tersedia
+        global_match: Surel cocok dengan nama pengguna yang terdaftar
+        global_mismatch: Sudah terdaftar. Coba {{suggestion}}?
+        not_available: Tidak tersedia. Coba {{suggestion}}?
+        too_short: Nama pengguna anda terlalu pendek
+        too_long: Nama pengguna anda terlalu panjang
+        checking: Memeriksa ketersediaan nama pengguna...
+        enter_email: Nama pengguna ditemukan; masukkan surel yang cocok
+        prefilled: Surel cocok dengan nama pengguna yang terdaftar
       locale:
-        title: "Bahasa antarmuka"
+        title: Bahasa antarmuka
+        instructions: User interface language. It will change when you refresh the page.
         default: "(standar)"
+        any: any
       password_confirmation:
-        title: "Kata Sandi Lagi"
-      last_posted: "Tulisan Terakhir"
-      last_emailed: "Terakhir Surel Dikirimkan"
-      last_seen: "Seen"
-      created: "Joined"
-      log_out: "Keluar"
-      location: "Lokasi"
-      website: "Website"
-      email_settings: "Email"
+        title: Kata Sandi Lagi
+      last_posted: Tulisan Terakhir
+      last_emailed: Terakhir Surel Dikirimkan
+      last_seen: Seen
+      created: Joined
+      log_out: Keluar
+      location: Lokasi
+      card_badge:
+        title: User Card Badge
+      website: Website
+      email_settings: Email
       like_notification_frequency:
-        always: "Selalu"
-        never: "Tidak pernah"
+        title: Notify when liked
+        always: Selalu
+        first_time_and_daily: First time a post is liked and daily
+        first_time: First time a post is liked
+        never: Tidak pernah
       email_previous_replies:
-        always: "selalu"
-        never: "tidak pernah"
+        title: Include previous replies at the bottom of emails
+        unless_emailed: unless previously sent
+        always: selalu
+        never: tidak pernah
       email_digests:
-        every_30_minutes: "setiap 30 menit"
-        every_hour: "per jam"
-        daily: "harian"
-        every_three_days: "setiap tiga hari"
-        weekly: "mingguan"
-        every_two_weeks: "setiap dua minggu"
-      email_private_messages: "Kirimkan saya surel bila seseorang mengirimkan pesan kepada saya"
-      other_settings: "Lainnya"
-      categories_settings: "Kategori"
+        title: When I don't visit here, send me an email summary of popular topics and replies
+        every_30_minutes: setiap 30 menit
+        every_hour: per jam
+        daily: harian
+        every_three_days: setiap tiga hari
+        weekly: mingguan
+        every_two_weeks: setiap dua minggu
+      include_tl0_in_digests: Include content from new users in summary emails
+      email_in_reply_to: Include an excerpt of replied to post in emails
+      email_direct: Send me an email when someone quotes me, replies to my post, mentions my @username, or invites me to a topic
+      email_private_messages: Kirimkan saya surel bila seseorang mengirimkan pesan kepada saya
+      email_always: Send me email notifications even when I am active on the site
+      other_settings: Lainnya
+      categories_settings: Kategori
       new_topic_duration:
-        after_2_days: "dibuat 2 hari ini"
-        after_1_week: "dibuat minggu ini"
-        after_2_weeks: "dibuat 2 minggu ini"
+        label: Consider topics new when
+        not_viewed: I haven't viewed them yet
+        last_here: created since I was here last
+        after_1_day: created in the last day
+        after_2_days: dibuat 2 hari ini
+        after_1_week: dibuat minggu ini
+        after_2_weeks: dibuat 2 minggu ini
+      auto_track_topics: Automatically track topics I enter
       auto_track_options:
-        never: "tidak pernah"
-        immediately: "segera"
-        after_30_seconds: "setelah 30 detik"
-        after_1_minute: "setelah 1 menit"
-        after_2_minutes: "setelah 2 menit"
-        after_3_minutes: "setelah 3 menit"
-        after_4_minutes: "setelah 4 menit"
-        after_5_minutes: "setelah 5 menit"
-        after_10_minutes: "setelah 10 menit"
+        never: tidak pernah
+        immediately: segera
+        after_30_seconds: setelah 30 detik
+        after_1_minute: setelah 1 menit
+        after_2_minutes: setelah 2 menit
+        after_3_minutes: setelah 3 menit
+        after_4_minutes: setelah 4 menit
+        after_5_minutes: setelah 5 menit
+        after_10_minutes: setelah 10 menit
+      notification_level_when_replying: When I post in a topic, set that topic to
       invited:
-        sent: "Terkirim"
-        pending: "Undangan yang tertunda"
-        pending_tab: "Tertunda"
-        pending_tab_with_count: "Tertunda ({{count}})"
-        topics_entered: "Topik Dilihat"
-        posts_read_count: "Tulisan dilihat"
-        expired: "Undangan ini sudah kadaluarsa"
-        rescind: "Hapus"
-        rescinded: "Undangan dihapus"
-        reinvite: "Kirim Ulang Undangan"
-        reinvite_all: "Kirim ulang semua Undangan"
-        reinvited: "Undangan sudah dikirim ulang"
-        reinvited_all: "Semua Undangan sudah dikirim ulang"
-        time_read: "Waktu Baca"
-        days_visited: "Hari Berkunjung"
-        account_age_days: "Umur akun dalam hari"
-        create: "Kirim Undangan"
-        generate_link: "Salin Tautan Undangan"
+        search: type to search invites...
+        title: Invites
+        user: Invited User
+        sent: Terkirim
+        none: There are no pending invites to display.
+        truncated:
+          one: Showing the first invite.
+          other: Showing the first {{count}} invites.
+        redeemed: Redeemed Invites
+        redeemed_tab: Redeemed
+        redeemed_tab_with_count: Redeemed ({{count}})
+        redeemed_at: Redeemed
+        pending: Undangan yang tertunda
+        pending_tab: Tertunda
+        pending_tab_with_count: Tertunda ({{count}})
+        topics_entered: Topik Dilihat
+        posts_read_count: Tulisan dilihat
+        expired: Undangan ini sudah kadaluarsa
+        rescind: Hapus
+        rescinded: Undangan dihapus
+        reinvite: Kirim Ulang Undangan
+        reinvite_all: Kirim ulang semua Undangan
+        reinvited: Undangan sudah dikirim ulang
+        reinvited_all: Semua Undangan sudah dikirim ulang
+        time_read: Waktu Baca
+        days_visited: Hari Berkunjung
+        account_age_days: Umur akun dalam hari
+        create: Kirim Undangan
+        generate_link: Salin Tautan Undangan
+        link_generated: Invite link generated successfully!
+        valid_for: 'Invite link is only valid for this email address: %{email}'
         bulk_invite:
-          text: "Undangan Massal dari Berkas"
+          none: You haven't invited anyone here yet. You can send individual invites, or invite a bunch of people at once by <a href='https://meta.discourse.org/t/send-bulk-invites/16468'>uploading a CSV file</a>.
+          text: Undangan Massal dari Berkas
+          success: File uploaded successfully, you will be notified via message when the process is complete.
+          error: Sorry, file should be of csv format.
       password:
-        title: "Kata sandi"
-        too_short: "Password kamu terlalu pendek."
-        common: "Password terlalu umum"
-        same_as_username: "Password dan nama pengguna kamu sama"
-        same_as_email: "Password dan email kamu sama"
-        ok: "Kata sandi Anda terlihat baik."
-        instructions: "Setidaknya %{count} karakter."
+        title: Kata sandi
+        too_short: Password kamu terlalu pendek.
+        common: Password terlalu umum
+        same_as_username: Password dan nama pengguna kamu sama
+        same_as_email: Password dan email kamu sama
+        ok: Kata sandi Anda terlihat baik.
+        instructions: at least %{count} characters
       summary:
-        title: "Ringkasan"
-        stats: "Statistik"
+        title: Ringkasan
+        stats: Statistik
+        time_read: read time
+        topic_count:
+          one: topic created
+          other: topics created
+        post_count:
+          one: post created
+          other: posts created
+        likes_given:
+          one: "<i class='fa fa-heart'></i> given"
+          other: "<i class='fa fa-heart'></i> given"
+        likes_received:
+          one: "<i class='fa fa-heart'></i> received"
+          other: "<i class='fa fa-heart'></i> received"
         days_visited:
-          other: "hari berkunjung"
-        top_replies: "Balasan Teratas"
-        no_replies: "Belum ada balasan"
-        more_replies: "Balasan lebih banyak"
-        top_topics: "Topik teratas"
-        no_links: "Belum ada tautan."
+          one: day visited
+          other: hari berkunjung
+        posts_read:
+          one: post read
+          other: posts read
+        bookmark_count:
+          one: bookmark
+          other: bookmarks
+        top_replies: Balasan Teratas
+        no_replies: Belum ada balasan
+        more_replies: Balasan lebih banyak
+        top_topics: Topik teratas
+        no_topics: No topics yet.
+        more_topics: More Topics
+        top_badges: Top Badges
+        no_badges: No badges yet.
+        more_badges: More Badges
+        top_links: Top Links
+        no_links: Belum ada tautan.
+        most_liked_by: Most Liked By
+        most_liked_users: Most Liked
+        most_replied_to_users: Most Replied To
+        no_likes: No likes yet.
+      associated_accounts: Logins
       ip_address:
-        title: "Alamat IP terakhir"
+        title: Alamat IP terakhir
       registration_ip_address:
-        title: "Alamat IP registrasi"
+        title: Alamat IP registrasi
+      avatar:
+        title: Profile Picture
+        header_title: profile, messages, bookmarks and preferences
       title:
-        title: "Judul"
+        title: Judul
       filters:
-        all: "Semua"
+        all: Semua
       stream:
-        posted_by: "Dibuat oleh"
-        sent_by: "Dikirimkan oleh"
-        private_message: "pesan"
-        the_topic: "Topik"
+        posted_by: Dibuat oleh
+        sent_by: Dikirimkan oleh
+        private_message: pesan
+        the_topic: Topik
+    loading: Loading...
     errors:
+      prev_page: while trying to load
       reasons:
-        network: "Gangguan Jaringan"
-        server: "Gangguan Server"
-        forbidden: "Akses ditolak"
-        unknown: "Gangguan"
-        not_found: "Halaman Tidak Ditemukan"
+        network: Gangguan Jaringan
+        server: Gangguan Server
+        forbidden: Akses ditolak
+        unknown: Gangguan
+        not_found: Halaman Tidak Ditemukan
       desc:
-        network: "Harap cek koneksi internet anda"
-        server: "Kode kesalahan: {{status}}"
-        unknown: "Terjadi kesalahan"
+        network: Harap cek koneksi internet anda
+        network_fixed: Looks like it's back.
+        server: 'Kode kesalahan: {{status}}'
+        forbidden: You're not allowed to view that.
+        not_found: Oops, the application tried to load a URL that doesn't exist.
+        unknown: Terjadi kesalahan
       buttons:
-        back: "Kembali"
-        again: "Coba Lagi"
-    close: "Tutup"
-    refresh: "Segarkan"
-    year: 'tahun'
-    month: 'bulan'
-    week: 'minggu'
-    day: 'hari'
+        back: Kembali
+        again: Coba Lagi
+        fixed: Load Page
+    close: Tutup
+    assets_changed_confirm: This site was just updated. Refresh now for the latest version?
+    logout: You were logged out.
+    refresh: Segarkan
+    read_only_mode:
+      enabled: This site is in read only mode. Please continue to browse, but replying, likes, and other actions are disabled for now.
+      login_disabled: Login is disabled while the site is in read only mode.
+      logout_disabled: Logout is disabled while the site is in read only mode.
+    too_few_topics_and_posts_notice: Let's <a href='http://blog.discourse.org/2014/08/building-a-discourse-community/'>get this discussion started!</a> There are currently <strong>%{currentTopics} / %{requiredTopics}</strong> topics and <strong>%{currentPosts} / %{requiredPosts}</strong> posts. New visitors need some conversations to read and respond to.
+    too_few_topics_notice: Let's <a href='http://blog.discourse.org/2014/08/building-a-discourse-community/'>get this discussion started!</a> There are currently <strong>%{currentTopics} / %{requiredTopics}</strong> topics. New visitors need some conversations to read and respond to.
+    too_few_posts_notice: Let's <a href='http://blog.discourse.org/2014/08/building-a-discourse-community/'>get this discussion started!</a> There are currently <strong>%{currentPosts} / %{requiredPosts}</strong> posts. New visitors need some conversations to read and respond to.
+    logs_error_rate_notice:
+      reached: "<b>%{relativeAge}</b> – <a href='%{url}' target='_blank'>%{rate}</a> reached site setting limit of %{siteSettingRate}."
+      exceeded: "<b>%{relativeAge}</b> – <a href='%{url}' target='_blank'>%{rate}</a> exceeds site setting limit of %{siteSettingRate}."
+      rate:
+        one: 1 error/%{duration}
+        other: "%{count} errors/%{duration}"
+    learn_more: learn more...
+    all_time: total
+    all_time_desc: total topics created
+    year: tahun
+    year_desc: topics created in the last 365 days
+    month: bulan
+    month_desc: topics created in the last 30 days
+    week: minggu
+    week_desc: topics created in the last 7 days
+    day: hari
+    first_post: First post
+    mute: Mute
+    unmute: Unmute
+    last_post: Last post
     last_reply_lowercase: balasan terakhir
+    replies_lowercase:
+      one: reply
+      other: replies
     signup_cta:
-      hide_forever: "tidak, terima kasih"
+      sign_up: Sign Up
+      hide_session: Remind me tomorrow
+      hide_forever: tidak, terima kasih
+      hidden_for_session: OK, I'll ask you tomorrow. You can always use 'Log In' to create an account, too.
+      intro: 'Hey there! :heart_eyes: Looks like you''re enjoying the discussion, but you''re not signed up for an account.'
+      value_prop: 'When you create an account, we remember exactly what you''ve read, so you always come right back where you left off. You also get notifications, here and via email, whenever new posts are made. And you can like posts to share the love. :heartbeat:'
     summary:
-      disable: 'Tampilkan Semua Postingan'
+      enabled_description: 'You''re viewing a summary of this topic: the most interesting posts as determined by the community.'
+      description: There are <b>{{replyCount}}</b> replies.
+      description_time: There are <b>{{replyCount}}</b> replies with an estimated read time of <b>{{readingTime}} minutes</b>.
+      enable: Summarize This Topic
+      disable: Tampilkan Semua Postingan
+    deleted_filter:
+      enabled_description: 'This topic contains deleted posts, which have been hidden. '
+      disabled_description: Deleted posts in the topic are shown.
+      enable: Hide Deleted Posts
+      disable: Show Deleted Posts
     private_message_info:
-      title: "Pesan"
-    email: 'Surel'
-    username: 'Nama Pengguna'
-    last_seen: 'Terlihat'
-    created: 'Dibuat'
-    created_lowercase: 'dibuat'
-    trust_level: 'Tingkat Kepercayaan'
-    search_hint: 'username, email, atau alamat IP'
+      title: Pesan
+      invite: Invite Others...
+      remove_allowed_user: Do you really want to remove {{name}} from this message?
+      remove_allowed_group: Do you really want to remove {{name}} from this message?
+    email: Surel
+    username: Nama Pengguna
+    last_seen: Terlihat
+    created: Dibuat
+    created_lowercase: dibuat
+    trust_level: Tingkat Kepercayaan
+    search_hint: username, email, atau alamat IP
     create_account:
-      title: "Buat Akun Baru"
+      disclaimer: By registering, you agree to the <a href='{{privacy_link}}'>privacy policy</a> and <a href='{{tos_link}}'>terms of service</a>.
+      title: Buat Akun Baru
+      failed: Something went wrong, perhaps this email is already registered, try the forgot password link
     forgot_password:
-      action: "Saya lupa password"
-      invite: "Silahkan masukkan username atau alamat email, dan kami akan mengirimkan email untuk menentukan ulang sandi Anda."
+      title: Password Reset
+      action: Saya lupa password
+      invite: Silahkan masukkan username atau alamat email, dan kami akan mengirimkan email untuk menentukan ulang sandi Anda.
+      reset: Reset Password
+      complete_username: If an account matches the username <b>%{username}</b>, you should receive an email with instructions on how to reset your password shortly.
+      complete_email: If an account matches <b>%{email}</b>, you should receive an email with instructions on how to reset your password shortly.
+      complete_username_found: We found an account that matches the username <b>%{username}</b>, you should receive an email with instructions on how to reset your password shortly.
+      complete_email_found: We found an account that matches <b>%{email}</b>, you should receive an email with instructions on how to reset your password shortly.
+      complete_username_not_found: No account matches the username <b>%{username}</b>
+      complete_email_not_found: No account matches <b>%{email}</b>
     login:
-      title: "Log In"
-      username: "Pengguna"
-      password: "Kata Sandi"
-      email_placeholder: "email atau username"
-      caps_lock_warning: "Tombol \"Caps Lock\" menyala"
-      blank_username_or_password: "Silahkan masukkan email atau nama pengguna dan kata sandi anda"
-      reset_password: 'Atur Ulang Kata Sandi'
-      or: "atau"
+      title: Log In
+      username: Pengguna
+      password: Kata Sandi
+      email_placeholder: email atau username
+      caps_lock_warning: Tombol "Caps Lock" menyala
+      error: Unknown error
+      rate_limit: Please wait before trying to log in again.
+      blank_username_or_password: Silahkan masukkan email atau nama pengguna dan kata sandi anda
+      reset_password: Atur Ulang Kata Sandi
+      logging_in: Signing In...
+      or: atau
+      authenticating: Authenticating...
+      awaiting_confirmation: Your account is awaiting activation, use the forgot password link to issue another activation email.
+      awaiting_approval: Your account has not been approved by a staff member yet. You will be sent an email when it is approved.
+      requires_invite: Sorry, access to this forum is by invite only.
+      not_activated: You can't log in yet. We previously sent an activation email to you at <b>{{sentTo}}</b>. Please follow the instructions in that email to activate your account.
+      not_allowed_from_ip_address: You can't login from that IP address.
+      admin_not_allowed_from_ip_address: You can't log in as admin from that IP address.
+      resend_activation_email: Click here to send the activation email again.
+      sent_activation_email_again: We sent another activation email to you at <b>{{currentEmail}}</b>. It might take a few minutes for it to arrive; be sure to check your spam folder.
+      to_continue: Please Log In
+      preferences: You need to be logged in to change your user preferences.
+      forgot: I don't recall my account details
+      not_approved: Your account hasn't been approved yet. You will be notified by email when you are ready to log in.
+      google:
+        title: with Google
+        message: Authenticating with Google (make sure pop up blockers are not enabled)
+      google_oauth2:
+        title: with Google
+        message: Authenticating with Google (make sure pop up blockers are not enabled)
       twitter:
-        title: "dengan Twitter"
+        title: dengan Twitter
+        message: Authenticating with Twitter (make sure pop up blockers are not enabled)
+      instagram:
+        title: with Instagram
+        message: Authenticating with Instagram (make sure pop up blockers are not enabled)
       facebook:
-        title: "dengan Facebook"
+        title: dengan Facebook
+        message: Authenticating with Facebook (make sure pop up blockers are not enabled)
+      yahoo:
+        title: with Yahoo
+        message: Authenticating with Yahoo (make sure pop up blockers are not enabled)
+      github:
+        title: with GitHub
+        message: Authenticating with GitHub (make sure pop up blockers are not enabled)
+    password_reset:
+      continue: Continue to %{site_name}
+    emoji_set:
+      apple_international: Apple/International
+      google: Google
+      twitter: Twitter
+      emoji_one: Emoji One
+      win10: Win10
+    category_page_style:
+      categories_only: Categories Only
+      categories_with_featured_topics: Categories with Featured Topics
+      categories_and_latest_topics: Categories and Latest Topics
+    shortcut_modifier_key:
+      shift: Shift
+      ctrl: Ctrl
+      alt: Alt
     composer:
-      reply_here: "Balas Disini"
-      reply: "Balas"
-      cancel: "Batal"
-      users_placeholder: "Tambahkan pengguna"
-      view_new_post: "Lihat posting baru Anda"
-      bold_title: "Strong"
-      italic_title: "Emphasis"
-      link_title: "Hyperlink"
-      modal_cancel: "Batal"
+      emoji: Emoji :)
+      more_emoji: more...
+      options: Options
+      whisper: whisper
+      unlist: unlisted
+      add_warning: This is an official warning.
+      toggle_whisper: Toggle Whisper
+      toggle_unlisted: Toggle Unlisted
+      posting_not_on_topic: Which topic do you want to reply to?
+      saving_draft_tip: saving...
+      saved_draft_tip: saved
+      saved_local_draft_tip: saved locally
+      similar_topics: Your topic is similar to...
+      drafts_offline: drafts offline
+      group_mentioned:
+        one: By mentioning {{group}}, you are about to notify <a href='{{group_link}}'>1 person</a> – are you sure?
+        other: By mentioning {{group}}, you are about to notify <a href='{{group_link}}'>{{count}} people</a> – are you sure?
+      cannot_see_mention:
+        category: You mentioned {{username}} but they won't be notified because they do not have access to this category. You will need to add them to a group that has access to this category.
+        private: You mentioned {{username}} but they won't be notified because they are unable to see this personal message. You will need to invite them to this PM.
+      duplicate_link: It looks like your link to <b>{{domain}}</b> was already posted in the topic by <b>@{{username}}</b> in <a href='{{post_url}}'>a reply {{ago}}</a> – are you sure you want to post it again?
+      error:
+        title_missing: Title is required
+        title_too_short: Title must be at least {{min}} characters
+        title_too_long: Title can't be more than {{max}} characters
+        post_missing: Post can't be empty
+        post_length: Post must be at least {{min}} characters
+        try_like: Have you tried the <i class="fa fa-heart"></i> button?
+        category_missing: You must choose a category
+      save_edit: Save Edit
+      reply_original: Reply on Original Topic
+      reply_here: Balas Disini
+      reply: Balas
+      cancel: Batal
+      create_topic: Create Topic
+      create_pm: Message
+      title: Or press Ctrl+Enter
+      users_placeholder: Tambahkan pengguna
+      title_placeholder: What is this discussion about in one brief sentence?
+      title_or_link_placeholder: Type title, or paste a link here
+      edit_reason_placeholder: why are you editing?
+      show_edit_reason: "(add edit reason)"
+      topic_featured_link_placeholder: Enter link shown with title.
+      reply_placeholder: Type here. Use Markdown, BBCode, or HTML to format. Drag or paste images.
+      view_new_post: Lihat posting baru Anda
+      saving: Saving
+      saved: Saved!
+      saved_draft: Post draft in progress. Select to resume.
+      uploading: Uploading...
+      show_preview: show preview &raquo;
+      hide_preview: "&laquo; hide preview"
+      quote_post_title: Quote whole post
+      bold_label: B
+      bold_title: Strong
+      bold_text: strong text
+      italic_label: I
+      italic_title: Emphasis
+      italic_text: emphasized text
+      link_title: Hyperlink
+      link_description: enter link description here
+      link_dialog_title: Insert Hyperlink
+      link_optional_text: optional title
+      link_url_placeholder: http://example.com
+      quote_title: Blockquote
+      quote_text: Blockquote
+      code_title: Preformatted text
+      code_text: indent preformatted text by 4 spaces
+      paste_code_text: type or paste code here
+      upload_title: Upload
+      upload_description: enter upload description here
+      olist_title: Numbered List
+      ulist_title: Bulleted List
+      list_item: List item
+      heading_label: H
+      heading_title: Heading
+      heading_text: Heading
+      hr_title: Horizontal Rule
+      help: Markdown Editing Help
+      toggler: hide or show the composer panel
+      modal_ok: OK
+      modal_cancel: Batal
+      cant_send_pm: Sorry, you can't send a message to %{username}.
+      yourself_confirm:
+        title: Did you forget to add recipients?
+        body: Right now this message is only being sent to yourself!
+      admin_options_title: Optional staff settings for this topic
+      auto_close:
+        label: 'Auto-close topic time:'
+        error: Please enter a valid value.
+        based_on_last_post: Don't close until the last post in the topic is at least this old.
+        all:
+          units: ''
+          examples: Enter number of hours (24), absolute time (17:30) or timestamp (2013-11-22 14:00).
+        limited:
+          units: "(# of hours)"
+          examples: Enter number of hours (24).
     notifications:
-      more: "lihat notifikasi sebelumnya"
-    new_item: "baru"
+      title: notifications of @name mentions, replies to your posts and topics, messages, etc
+      none: Unable to load notifications at this time.
+      empty: No notifications found.
+      more: lihat notifikasi sebelumnya
+      total_flagged: total flagged posts
+      mentioned: "<i title='mentioned' class='fa fa-at'></i><p><span>{{username}}</span> {{description}}</p>"
+      group_mentioned: "<i title='group mentioned' class='fa fa-at'></i><p><span>{{username}}</span> {{description}}</p>"
+      quoted: "<i title='quoted' class='fa fa-quote-right'></i><p><span>{{username}}</span> {{description}}</p>"
+      replied: "<i title='replied' class='fa fa-reply'></i><p><span>{{username}}</span> {{description}}</p>"
+      posted: "<i title='posted' class='fa fa-reply'></i><p><span>{{username}}</span> {{description}}</p>"
+      edited: "<i title='edited' class='fa fa-pencil'></i><p><span>{{username}}</span> {{description}}</p>"
+      liked: "<i title='liked' class='fa fa-heart'></i><p><span>{{username}}</span> {{description}}</p>"
+      liked_2: "<i title='liked' class='fa fa-heart'></i><p><span>{{username}}, {{username2}}</span> {{description}}</p>"
+      liked_many:
+        one: "<i title='liked' class='fa fa-heart'></i><p><span>{{username}}, {{username2}} and 1 other</span> {{description}}</p>"
+        other: "<i title='liked' class='fa fa-heart'></i><p><span>{{username}}, {{username2}} and {{count}} others</span> {{description}}</p>"
+      private_message: "<i title='private message' class='fa fa-envelope-o'></i><p><span>{{username}}</span> {{description}}</p>"
+      invited_to_private_message: "<i title='private message' class='fa fa-envelope-o'></i><p><span>{{username}}</span> {{description}}</p>"
+      invited_to_topic: "<i title='invited to topic' class='fa fa-hand-o-right'></i><p><span>{{username}}</span> {{description}}</p>"
+      invitee_accepted: "<i title='accepted your invitation' class='fa fa-user'></i><p><span>{{username}}</span> accepted your invitation</p>"
+      moved_post: "<i title='moved post' class='fa fa-sign-out'></i><p><span>{{username}}</span> moved {{description}}</p>"
+      linked: "<i title='linked post' class='fa fa-link'></i><p><span>{{username}}</span> {{description}}</p>"
+      granted_badge: "<i title='badge granted' class='fa fa-certificate'></i><p>Earned '{{description}}'</p>"
+      watching_first_post: "<i title='new topic' class='fa fa-dot-circle-o'></i><p><span>New Topic</span> {{description}}</p>"
+      group_message_summary:
+        one: "<i title='messages in group inbox' class='fa fa-group'></i><p> {{count}} message in your {{group_name}} inbox</p>"
+        other: "<i title='messages in group inbox' class='fa fa-group'></i><p> {{count}} messages in your {{group_name}} inbox</p>"
+      alt:
+        mentioned: Mentioned by
+        quoted: Quoted by
+        replied: Replied
+        posted: Post by
+        edited: Edit your post by
+        liked: Liked your post
+        private_message: Private message from
+        invited_to_private_message: Invited to a private message from
+        invited_to_topic: Invited to a topic from
+        invitee_accepted: Invite accepted by
+        moved_post: Your post was moved by
+        linked: Link to your post
+        granted_badge: Badge granted
+        group_message_summary: Messages in group inbox
+      popup:
+        mentioned: '{{username}} mentioned you in "{{topic}}" - {{site_title}}'
+        group_mentioned: '{{username}} mentioned you in "{{topic}}" - {{site_title}}'
+        quoted: '{{username}} quoted you in "{{topic}}" - {{site_title}}'
+        replied: '{{username}} replied to you in "{{topic}}" - {{site_title}}'
+        posted: '{{username}} posted in "{{topic}}" - {{site_title}}'
+        private_message: '{{username}} sent you a private message in "{{topic}}" - {{site_title}}'
+        linked: '{{username}} linked to your post from "{{topic}}" - {{site_title}}'
+    upload_selector:
+      title: Add an image
+      title_with_attachments: Add an image or a file
+      from_my_computer: From my device
+      from_the_web: From the web
+      remote_tip: link to image
+      remote_tip_with_attachments: link to image or file {{authorized_extensions}}
+      local_tip: select images from your device
+      local_tip_with_attachments: select images or files from your device {{authorized_extensions}}
+      hint: "(you can also drag & drop into the editor to upload them)"
+      hint_for_supported_browsers: you can also drag and drop or paste images into the editor
+      uploading: Uploading
+      select_file: Select File
+      image_link: link your image will point to
+    search:
+      sort_by: Sort by
+      relevance: Relevance
+      latest_post: Latest Post
+      most_viewed: Most Viewed
+      most_liked: Most Liked
+      select_all: Select All
+      clear_all: Clear All
+      too_short: Your search term is too short.
+      result_count:
+        one: 1 result for <span class='term'>"{{term}}"</span>
+        other: '{{count}} results for <span class=''term''>"{{term}}"</span>'
+      title: search topics, posts, users, or categories
+      no_results: No results found.
+      no_more_results: No more results found.
+      searching: Searching ...
+      post_format: "#{{post_number}} by {{username}}"
+      context:
+        user: Search posts by @{{username}}
+        category: 'Search the #{{category}} category'
+        topic: Search this topic
+        private_messages: Search messages
+      advanced:
+        title: Advanced Search
+        posted_by:
+          label: Posted by
+        in_category:
+          label: In Category
+        in_group:
+          label: In Group
+        with_badge:
+          label: With Badge
+        with_tags:
+          label: With Tags
+        filters:
+          label: Only return topics/posts that...
+          likes: I liked
+          posted: I posted in
+          watching: I'm watching
+          tracking: I'm tracking
+          private: are in my messages
+          bookmarks: I've bookmarked
+          first: are the very first post
+          pinned: are pinned
+          unpinned: are not pinned
+          wiki: are wiki
+        statuses:
+          label: Where topics
+          open: are open
+          closed: are closed
+          archived: are archived
+          noreplies: have zero replies
+          single_user: contain a single user
+        post:
+          count:
+            label: Minimum Post Count
+          time:
+            label: Posted
+            before: before
+            after: after
+    hamburger_menu: go to another topic list or category
+    new_item: baru
+    go_back: go back
+    not_logged_in_user: user page with summary of current activity and preferences
+    current_user: go to your user page
     topics:
+      new_messages_marker: last visit
       bulk:
-        choose_new_tags: "Silahkan pilih tag baru untuk topik-topik ini:"
+        select_all: Select All
+        clear_all: Clear All
+        unlist_topics: Unlist Topics
+        reset_read: Reset Read
+        delete: Delete Topics
+        dismiss: Dismiss
+        dismiss_read: Dismiss all unread
+        dismiss_button: Dismiss…
+        dismiss_tooltip: Dismiss just new posts or stop tracking topics
+        also_dismiss_topics: Stop tracking these topics so they never show up as unread for me again
+        dismiss_new: Dismiss New
+        toggle: toggle bulk selection of topics
+        actions: Bulk Actions
+        change_category: Change Category
+        close_topics: Close Topics
+        archive_topics: Archive Topics
+        notification_level: Change Notification Level
+        choose_new_category: 'Choose the new category for the topics:'
+        selected:
+          one: You have selected <b>1</b> topic.
+          other: You have selected <b>{{count}}</b> topics.
+        change_tags: Change Tags
+        choose_new_tags: 'Silahkan pilih tag baru untuk topik-topik ini:'
+        changed_tags: The tags of those topics were changed.
       none:
-        new: "Anda tidak memiliki topik baru"
+        unread: You have no unread topics.
+        new: Anda tidak memiliki topik baru
+        read: You haven't read any topics yet.
+        posted: You haven't posted in any topics yet.
+        latest: There are no latest topics. That's sad.
+        hot: There are no hot topics.
+        bookmarks: You have no bookmarked topics yet.
+        category: There are no {{category}} topics.
+        top: There are no top topics.
+        search: There are no search results.
+        educate:
+          new: <p>Your new topics appear here.</p><p>By default, topics are considered new and will show a <span class="badge new-topic badge-notification" style="vertical-align:middle;line-height:inherit;">new</span> indicator if they were created in the last 2 days.</p><p>Visit your <a href="%{userPrefsUrl}">preferences</a> to change this.</p>
+          unread: <p>Your unread topics appear here.</p><p>By default, topics are considered unread and will show unread counts <span class="badge new-posts badge-notification">1</span> if you:</p><ul><li>Created the topic</li><li>Replied to the topic</li><li>Read the topic for more than 4 minutes</li></ul><p>Or if you have explicitly set the topic to Tracked or Watched via the notification control at the bottom of each topic.</p><p>Visit your <a href="%{userPrefsUrl}">preferences</a> to change this.</p>
       bottom:
-        new: "Tidak ada topik baru lagi"
+        latest: There are no more latest topics.
+        hot: There are no more hot topics.
+        posted: There are no more posted topics.
+        read: There are no more read topics.
+        new: Tidak ada topik baru lagi
+        unread: There are no more unread topics.
+        category: There are no more {{category}} topics.
+        top: There are no more top topics.
+        bookmarks: There are no more bookmarked topics.
+        search: There are no more search results.
     topic:
-      create: 'Topik Baru'
-      create_long: 'Pilih topik baru'
-      new: 'topik baru'
+      unsubscribe:
+        stop_notifications: You will now receive less notifications for <strong>{{title}}</strong>
+        change_notification_state: 'Your current notification state is '
+      filter_to:
+        one: 1 post in topic
+        other: "{{count}} posts in topic"
+      create: Topik Baru
+      create_long: Pilih topik baru
+      private_message: Start a message
+      archive_message:
+        help: Move message to your archive
+        title: Archive
+      move_to_inbox:
+        title: Move to Inbox
+        help: Move message back to Inbox
+      list: Topics
+      new: topik baru
+      unread: unread
       new_topics:
-        other: '{{count}} topik baru'
+        one: 1 new topic
+        other: "{{count}} topik baru"
+      unread_topics:
+        one: 1 unread topic
+        other: "{{count}} unread topics"
+      title: Topic
       invalid_access:
-        description: "Maaf,  kamu tidak berhak mengakses topik tersebut."
+        title: Topic is private
+        description: Maaf,  kamu tidak berhak mengakses topik tersebut.
+        login_required: You need to log in to see that topic.
       server_error:
-        title: "Gagal membuka topik"
+        title: Gagal membuka topik
+        description: Sorry, we couldn't load that topic, possibly due to a connection problem. Please try again. If the problem persists, let us know.
       not_found:
-        title: "Tidak ada topik"
+        title: Tidak ada topik
+        description: Sorry, we couldn't find that topic. Perhaps it was removed by a moderator?
+      total_unread_posts:
+        one: you have 1 unread post in this topic
+        other: you have {{count}} unread posts in this topic
+      unread_posts:
+        one: you have 1 unread old post in this topic
+        other: you have {{count}} unread old posts in this topic
       new_posts:
-        other: "ada {{count}} posting baru di topik ini sejak terakhir Anda mengunjunginya"
-      back_to_list: "Kembali ke Daftar Topik"
-      options: "Opsi Topik"
-      show_links: "tampilkan pranala dalam topik ini"
+        one: there is 1 new post in this topic since you last read it
+        other: ada {{count}} posting baru di topik ini sejak terakhir Anda mengunjunginya
+      likes:
+        one: there is 1 like in this topic
+        other: there are {{count}} likes in this topic
+      back_to_list: Kembali ke Daftar Topik
+      options: Opsi Topik
+      show_links: tampilkan pranala dalam topik ini
+      toggle_information: toggle topic details
+      read_more_in_category: Want to read more? Browse other topics in {{catLink}} or {{latestLink}}.
+      read_more: Want to read more? {{catLink}} or {{latestLink}}.
+      read_more_MF: There { UNREAD, plural, =0 {} one { is <a href='/unread'>1 unread</a> } other { are <a href='/unread'># unread</a> } } { NEW, plural, =0 {} one { {BOTH, select, true{and } false {is } other{}} <a href='/new'>1 new</a> topic} other { {BOTH, select, true{and } false {are } other{}} <a href='/new'># new</a> topics} } remaining, or {CATEGORY, select, true {browse other topics in {catLink}} false {{latestLink}} other {}}
       browse_all_categories: Lihat semua kategori
       view_latest_topics: lihat topik terbaru
       suggest_create_topic: Buat topik baru?
       jump_reply_up: lompat ke balasan sebelumnya
+      jump_reply_down: jump to later reply
+      deleted: The topic has been deleted
+      auto_close_notice: This topic will automatically close %{timeLeft}.
+      auto_close_notice_based_on_last_post: This topic will close %{duration} after the last reply.
+      auto_close_title: Auto-Close Settings
+      auto_close_save: Save
+      auto_close_remove: Don't Auto-Close This Topic
+      auto_close_immediate:
+        one: The last post in the topic is already 1 hour old, so the topic will be closed immediately.
+        other: The last post in the topic is already %{count} hours old, so the topic will be closed immediately.
+      timeline:
+        back: Back
+        back_description: Go back to your last unread post
+        replies_short: "%{current} / %{total}"
+      progress:
+        title: topic progress
+        go_top: top
+        go_bottom: bottom
+        go: go
+        jump_bottom: jump to last post
+        jump_prompt: jump to...
+        jump_prompt_of: of %{count} posts
+        jump_prompt_long: What post would you like to jump to?
+        jump_bottom_with_number: jump to post %{post_number}
+        total: total posts
+        current: current post
+      notifications:
+        title: change how often you get notified about this topic
+        reasons:
+          mailing_list_mode: You have mailing list mode enabled, so you will be notified of replies to this topic via email.
+          '3_10': You will receive notifications because you are watching a tag on this topic.
+          '3_6': You will receive notifications because you are watching this category.
+          '3_5': You will receive notifications because you started watching this topic automatically.
+          '3_2': You will receive notifications because you are watching this topic.
+          '3_1': You will receive notifications because you created this topic.
+          '3': You will receive notifications because you are watching this topic.
+          '2_8': You will receive notifications because you are tracking this category.
+          '2_4': You will receive notifications because you posted a reply to this topic.
+          '2_2': You will receive notifications because you are tracking this topic.
+          '2': You will receive notifications because you <a href="/users/{{username}}/preferences">read this topic</a>.
+          '1_2': You will be notified if someone mentions your @name or replies to you.
+          '1': You will be notified if someone mentions your @name or replies to you.
+          '0_7': You are ignoring all notifications in this category.
+          '0_2': You are ignoring all notifications on this topic.
+          '0': You are ignoring all notifications on this topic.
+        watching_pm:
+          title: Watching
+          description: You will be notified of every new reply in this message, and a count of new replies will be shown.
+        watching:
+          title: Watching
+          description: You will be notified of every new reply in this topic, and a count of new replies will be shown.
+        tracking_pm:
+          title: Tracking
+          description: A count of new replies will be shown for this message. You will be notified if someone mentions your @name or replies to you.
+        tracking:
+          title: Tracking
+          description: 'A count of new replies will be shown for this topic. You will be notified if someone mentions your @name or replies to you. '
+        regular:
+          title: Normal
+          description: You will be notified if someone mentions your @name or replies to you.
+        regular_pm:
+          title: Normal
+          description: You will be notified if someone mentions your @name or replies to you.
+        muted_pm:
+          title: Muted
+          description: You will never be notified of anything about this message.
+        muted:
+          title: Muted
+          description: You will never be notified of anything about this topic, and it will not appear in latest.
+      actions:
+        recover: Un-Delete Topic
+        delete: Delete Topic
+        open: Open Topic
+        close: Close Topic
+        multi_select: Select Posts…
+        auto_close: Auto Close…
+        pin: Pin Topic…
+        unpin: Un-Pin Topic…
+        unarchive: Unarchive Topic
+        archive: Archive Topic
+        invisible: Make Unlisted
+        visible: Make Listed
+        reset_read: Reset Read Data
+        make_public: Make Public Topic
+        make_private: Make Private Message
+      feature:
+        pin: Pin Topic
+        unpin: Un-Pin Topic
+        pin_globally: Pin Topic Globally
+        make_banner: Banner Topic
+        remove_banner: Remove Banner Topic
+      reply:
+        title: Reply
+        help: begin composing a reply to this topic
+      clear_pin:
+        title: Clear pin
+        help: Clear the pinned status of this topic so it no longer appears at the top of your topic list
+      share:
+        title: Share
+        help: share a link to this topic
+      print:
+        title: Print
+        help: Open a printer friendly version of this topic
+      flag_topic:
+        title: Flag
+        help: privately flag this topic for attention or send a private notification about it
+        success_message: You successfully flagged this topic.
+      feature_topic:
+        title: Feature this topic
+        pin: Make this topic appear at the top of the {{categoryLink}} category until
+        confirm_pin: You already have {{count}} pinned topics. Too many pinned topics may be a burden for new and anonymous users. Are you sure you want to pin another topic in this category?
+        unpin: Remove this topic from the top of the {{categoryLink}} category.
+        unpin_until: Remove this topic from the top of the {{categoryLink}} category or wait until <strong>%{until}</strong>.
+        pin_note: Users can unpin the topic individually for themselves.
+        pin_validation: A date is required to pin this topic.
+        not_pinned: There are no topics pinned in {{categoryLink}}.
+        already_pinned:
+          one: 'Topics currently pinned in {{categoryLink}}: <strong class=''badge badge-notification unread''>1</strong>'
+          other: 'Topics currently pinned in {{categoryLink}}: <strong class=''badge badge-notification unread''>{{count}}</strong>'
+        pin_globally: Make this topic appear at the top of all topic lists until
+        confirm_pin_globally: You already have {{count}} globally pinned topics. Too many pinned topics may be a burden for new and anonymous users. Are you sure you want to pin another topic globally?
+        unpin_globally: Remove this topic from the top of all topic lists.
+        unpin_globally_until: Remove this topic from the top of all topic lists or wait until <strong>%{until}</strong>.
+        global_pin_note: Users can unpin the topic individually for themselves.
+        not_pinned_globally: There are no topics pinned globally.
+        already_pinned_globally:
+          one: 'Topics currently pinned globally: <strong class=''badge badge-notification unread''>1</strong>'
+          other: 'Topics currently pinned globally: <strong class=''badge badge-notification unread''>{{count}}</strong>'
+        make_banner: Make this topic into a banner that appears at the top of all pages.
+        remove_banner: Remove the banner that appears at the top of all pages.
+        banner_note: Users can dismiss the banner by closing it. Only one topic can be bannered at any given time.
+        no_banner_exists: There is no banner topic.
+        banner_exists: There <strong class='badge badge-notification unread'>is</strong> currently a banner topic.
+      inviting: Inviting...
+      automatically_add_to_groups: 'This invite also includes access to these groups:'
+      invite_private:
+        title: Invite to Message
+        email_or_username: Invitee's Email or Username
+        email_or_username_placeholder: email address or username
+        action: Invite
+        success: We've invited that user to participate in this message.
+        success_group: We've invited that group to participate in this message.
+        error: Sorry, there was an error inviting that user.
+        group_name: group name
+      controls: Topic Controls
+      invite_reply:
+        title: Invite
+        username_placeholder: username
+        action: Send Invite
+        help: invite others to this topic via email or notifications
+        to_forum: We'll send a brief email allowing your friend to immediately join by clicking a link, no login required.
+        sso_enabled: Enter the username of the person you'd like to invite to this topic.
+        to_topic_blank: Enter the username or email address of the person you'd like to invite to this topic.
+        to_topic_email: You've entered an email address. We'll email an invitation that allows your friend to immediately reply to this topic.
+        to_topic_username: You've entered a username. We'll send a notification with a link inviting them to this topic.
+        to_username: Enter the username of the person you'd like to invite. We'll send a notification with a link inviting them to this topic.
+        email_placeholder: name@example.com
+        success_email: We mailed out an invitation to <b>{{emailOrUsername}}</b>. We'll notify you when the invitation is redeemed. Check the invitations tab on your user page to keep track of your invites.
+        success_username: We've invited that user to participate in this topic.
+        error: Sorry, we couldn't invite that person. Perhaps they have already been invited? (Invites are rate limited)
+      login_reply: Log In to Reply
+      filters:
+        n_posts:
+          one: 1 post
+          other: "{{count}} posts"
+        cancel: Remove filter
       split_topic:
-        title: "Pindahkan sebagai Topik Baru"
-        action: "pindahkan sebagai topik baru"
-        topic_name: "Nama Topik Baru"
-        error: "Ada kesalahan dalam memindahkan posting sebagai topik baru"
+        title: Pindahkan sebagai Topik Baru
+        action: pindahkan sebagai topik baru
+        topic_name: Nama Topik Baru
+        error: Ada kesalahan dalam memindahkan posting sebagai topik baru
+        instructions:
+          one: You are about to create a new topic and populate it with the post you've selected.
+          other: You are about to create a new topic and populate it with the <b>{{count}}</b> posts you've selected.
+      merge_topic:
+        title: Move to Existing Topic
+        action: move to existing topic
+        error: There was an error moving posts into that topic.
+        instructions:
+          one: Please choose the topic you'd like to move that post to.
+          other: Please choose the topic you'd like to move those <b>{{count}}</b> posts to.
+      merge_posts:
+        title: Merge Selected Posts
+        action: merge selected posts
+        error: There was an error merging the selected posts.
       change_owner:
-        label: "Pemilik Posting Yang Baru"
-        placeholder: "username pemilik yang baru"
+        title: Change Owner of Posts
+        action: change ownership
+        error: There was an error changing the ownership of the posts.
+        label: Pemilik Posting Yang Baru
+        placeholder: username pemilik yang baru
+        instructions:
+          one: Please choose the new owner of the post by <b>{{old_user}}</b>.
+          other: Please choose the new owner of the {{count}} posts by <b>{{old_user}}</b>.
+        instructions_warn: 'Note that any notifications about this post will not be transferred to the new user retroactively.<br>Warning: Currently, no post-dependent data is transferred over to the new user. Use with caution.'
+      change_timestamp:
+        title: Change Timestamp
+        action: change timestamp
+        invalid_timestamp: Timestamp cannot be in the future.
+        error: There was an error changing the timestamp of the topic.
+        instructions: Please select the new timestamp of the topic. Posts in the topic will be updated to have the same time difference.
+      multi_select:
+        select: select
+        selected: selected ({{count}})
+        select_replies: select +replies
+        delete: delete selected
+        cancel: cancel selecting
+        select_all: select all
+        deselect_all: deselect all
+        description:
+          one: You have selected <b>1</b> post.
+          other: You have selected <b>{{count}}</b> posts.
     post:
+      reply: "<i class='fa fa-mail-forward'></i> {{replyAvatar}} {{usernameLink}}"
+      reply_topic: "<i class='fa fa-mail-forward'></i> {{link}}"
+      quote_reply: Quote
+      edit: Editing {{link}} {{replyAvatar}} {{username}}
+      edit_reason: 'Reason: '
+      post_number: post {{number}}
+      wiki_last_edited_on: wiki last edited on
+      last_edited_on: post last edited on
+      reply_as_new_topic: Reply as linked Topic
+      reply_as_new_private_message: Reply as new message to the same recipients
+      continue_discussion: 'Continuing the discussion from {{postLink}}:'
+      follow_quote: go to the quoted post
+      show_full: Show Full Post
+      show_hidden: View hidden content.
+      deleted_by_author:
+        one: "(post withdrawn by author, will be automatically deleted in %{count} hour unless flagged)"
+        other: "(post withdrawn by author, will be automatically deleted in %{count} hours unless flagged)"
+      expand_collapse: expand/collapse
+      gap:
+        one: view 1 hidden reply
+        other: view {{count}} hidden replies
+      unread: Post is unread
+      has_replies:
+        one: "{{count}} Reply"
+        other: "{{count}} Replies"
+      has_likes:
+        one: "{{count}} Like"
+        other: "{{count}} Likes"
+      has_likes_title:
+        one: 1 person liked this post
+        other: "{{count}} people liked this post"
+      has_likes_title_only_you: you liked this post
+      has_likes_title_you:
+        one: you and 1 other person liked this post
+        other: you and {{count}} other people liked this post
       errors:
-        image_upload_not_allowed_for_new_user: "Maaf, pengguna baru belum diperbolehkan mengunggah gambar."
-        attachment_upload_not_allowed_for_new_user: "Maaf, pengguna baru belum diperbolehkan mengunggah lampiran."
+        create: Sorry, there was an error creating your post. Please try again.
+        edit: Sorry, there was an error editing your post. Please try again.
+        upload: Sorry, there was an error uploading that file. Please try again.
+        file_too_large: Sorry, that file is too big (maximum size is {{max_size_kb}}kb). Why not upload your large file to a cloud sharing service, then share the link?
+        too_many_uploads: Sorry, you can only upload one file at a time.
+        too_many_dragged_and_dropped_files: Sorry, you can only upload 10 files at a time.
+        upload_not_authorized: 'Sorry, the file you are trying to upload is not authorized (authorized extensions: {{authorized_extensions}}).'
+        image_upload_not_allowed_for_new_user: Maaf, pengguna baru belum diperbolehkan mengunggah gambar.
+        attachment_upload_not_allowed_for_new_user: Maaf, pengguna baru belum diperbolehkan mengunggah lampiran.
+        attachment_download_requires_login: Sorry, you need to be logged in to download attachments.
+      abandon:
+        confirm: Are you sure you want to abandon your post?
+        no_value: No, keep
+        yes_value: Yes, abandon
+      via_email: this post arrived via email
+      via_auto_generated_email: this post arrived via an auto generated email
+      whisper: this post is a private whisper for moderators
+      wiki:
+        about: this post is a wiki
+      archetypes:
+        save: Save Options
+      few_likes_left: Thanks for sharing the love! You only have a few likes left for today.
       controls:
-        more: "Selengkapnya"
+        reply: begin composing a reply to this post
+        like: like this post
+        has_liked: you've liked this post
+        undo_like: undo like
+        edit: edit this post
+        edit_anonymous: Sorry, but you need to be logged in to edit this post.
+        flag: privately flag this post for attention or send a private notification about it
+        delete: delete this post
+        undelete: undelete this post
+        share: share a link to this post
+        more: Selengkapnya
+        delete_replies:
+          confirm:
+            one: Do you also want to delete the direct reply to this post?
+            other: Do you also want to delete the {{count}} direct replies to this post?
+          yes_value: Yes, delete the replies too
+          no_value: No, just this post
+        admin: post admin actions
+        wiki: Make Wiki
+        unwiki: Remove Wiki
+        convert_to_moderator: Add Staff Color
+        revert_to_regular: Remove Staff Color
+        rebake: Rebuild HTML
+        unhide: Unhide
+        change_owner: Change Ownership
+      actions:
+        flag: Flag
+        defer_flags:
+          one: Defer flag
+          other: Defer flags
+        undo:
+          off_topic: Undo flag
+          spam: Undo flag
+          inappropriate: Undo flag
+          bookmark: Undo bookmark
+          like: Undo like
+          vote: Undo vote
+        people:
+          off_topic: flagged this as off-topic
+          spam: flagged this as spam
+          inappropriate: flagged this as inappropriate
+          notify_moderators: notified moderators
+          notify_user: sent a message
+          bookmark: bookmarked this
+          like: liked this
+          vote: voted for this
+        by_you:
+          off_topic: You flagged this as off-topic
+          spam: You flagged this as spam
+          inappropriate: You flagged this as inappropriate
+          notify_moderators: You flagged this for moderation
+          notify_user: You sent a message to this user
+          bookmark: You bookmarked this post
+          like: You liked this
+          vote: You voted for this post
+        by_you_and_others:
+          off_topic:
+            one: You and 1 other flagged this as off-topic
+            other: You and {{count}} other people flagged this as off-topic
+          spam:
+            one: You and 1 other flagged this as spam
+            other: You and {{count}} other people flagged this as spam
+          inappropriate:
+            one: You and 1 other flagged this as inappropriate
+            other: You and {{count}} other people flagged this as inappropriate
+          notify_moderators:
+            one: You and 1 other flagged this for moderation
+            other: You and {{count}} other people flagged this for moderation
+          notify_user:
+            one: You and 1 other sent a message to this user
+            other: You and {{count}} other people sent a message to this user
+          bookmark:
+            one: You and 1 other bookmarked this post
+            other: You and {{count}} other people bookmarked this post
+          like:
+            one: You and 1 other liked this
+            other: You and {{count}} other people liked this
+          vote:
+            one: You and 1 other voted for this post
+            other: You and {{count}} other people voted for this post
+        by_others:
+          off_topic:
+            one: 1 person flagged this as off-topic
+            other: "{{count}} people flagged this as off-topic"
+          spam:
+            one: 1 person flagged this as spam
+            other: "{{count}} people flagged this as spam"
+          inappropriate:
+            one: 1 person flagged this as inappropriate
+            other: "{{count}} people flagged this as inappropriate"
+          notify_moderators:
+            one: 1 person flagged this for moderation
+            other: "{{count}} people flagged this for moderation"
+          notify_user:
+            one: 1 person sent a message to this user
+            other: "{{count}} sent a message to this user"
+          bookmark:
+            one: 1 person bookmarked this post
+            other: "{{count}} people bookmarked this post"
+          like:
+            one: 1 person liked this
+            other: "{{count}} people liked this"
+          vote:
+            one: 1 person voted for this post
+            other: "{{count}} people voted for this post"
+      delete:
+        confirm:
+          one: Are you sure you want to delete that post?
+          other: Are you sure you want to delete all those posts?
+      merge:
+        confirm:
+          one: Are you sure you want merge those posts?
+          other: Are you sure you want to merge those {{count}} posts?
       revisions:
         controls:
-          first: "Revisi pertama"
+          first: Revisi pertama
+          previous: Previous revision
+          next: Next revision
+          last: Last revision
+          hide: Hide revision
+          show: Show revision
+          revert: Revert to this revision
+          edit_wiki: Edit Wiki
+          edit_post: Edit Post
+          comparing_previous_to_current_out_of_total: "<strong>{{previous}}</strong> <i class='fa fa-arrows-h'></i> <strong>{{current}}</strong> / {{total}}"
+        displays:
+          inline:
+            title: Show the rendered output with additions and removals inline
+            button: HTML
+          side_by_side:
+            title: Show the rendered output diffs side-by-side
+            button: HTML
+          side_by_side_markdown:
+            title: Show the raw source diffs side-by-side
+            button: Raw
     category:
-      edit_long: "Ubah"
-      auto_close_units: "jam"
+      can: 'can&hellip; '
+      none: "(no category)"
+      all: All categories
+      choose: Select a category&hellip;
+      edit: edit
+      edit_long: Ubah
+      view: View Topics in Category
+      general: General
+      settings: Settings
+      topic_template: Topic Template
+      tags: Tags
+      tags_allowed_tags: 'Tags that can only be used in this category:'
+      tags_allowed_tag_groups: 'Tag groups that can only be used in this category:'
+      tags_placeholder: "(Optional) list of allowed tags"
+      tag_groups_placeholder: "(Optional) list of allowed tag groups"
+      topic_featured_link_allowed: Allow featured links in this category
+      delete: Delete Category
+      create: New Category
+      create_long: Create a new category
+      save: Save Category
+      slug: Category Slug
+      slug_placeholder: "(Optional) dashed-words for url"
+      creation_error: There has been an error during the creation of the category.
+      save_error: There was an error saving the category.
+      name: Category Name
+      description: Description
+      topic: category topic
+      logo: Category Logo Image
+      background_image: Category Background Image
+      badge_colors: Badge colors
+      background_color: Background color
+      foreground_color: Foreground color
+      name_placeholder: One or two words maximum
+      color_placeholder: Any web color
+      delete_confirm: Are you sure you want to delete this category?
+      delete_error: There was an error deleting the category.
+      list: List Categories
+      no_description: Please add a description for this category.
+      change_in_category_topic: Edit Description
+      already_used: This color has been used by another category
+      security: Security
+      special_warning: 'Warning: This category is a pre-seeded category and the security settings cannot be edited. If you do not wish to use this category, delete it instead of repurposing it.'
+      images: Images
+      auto_close_label: 'Auto-close topics after:'
+      auto_close_units: jam
+      email_in: 'Custom incoming email address:'
+      email_in_allow_strangers: Accept emails from anonymous users with no accounts
+      email_in_disabled: 'Posting new topics via email is disabled in the Site Settings. To enable posting new topics via email, '
+      email_in_disabled_click: enable the "email in" setting.
+      suppress_from_homepage: Suppress this category from the homepage.
+      all_topics_wiki: Make new topics wikis by default.
+      sort_order: 'Default Sort:'
+      allow_badges_label: Allow badges to be awarded in this category
+      edit_permissions: Edit Permissions
+      add_permission: Add Permission
+      this_year: this year
+      position: position
+      default_position: Default Position
+      position_disabled: 'Categories will be displayed in order of activity. To control the order of categories in lists, '
+      position_disabled_click: enable the "fixed category positions" setting.
+      parent: Parent Category
+      notifications:
+        watching:
+          title: Watching
+          description: You will automatically watch all topics in these categories. You will be notified of every new post in every topic, and a count of new replies will be shown.
+        watching_first_post:
+          title: Watching First Post
+          description: You will only be notified of the first post in each new topic in these categories.
+        tracking:
+          title: Tracking
+          description: You will automatically track all topics in these categories. You will be notified if someone mentions your @name or replies to you, and a count of new replies will be shown.
+        regular:
+          title: Normal
+          description: You will be notified if someone mentions your @name or replies to you.
+        muted:
+          title: Muted
+          description: You will never be notified of anything about new topics in these categories, and they will not appear in latest.
+      sort_options:
+        default: default
+        likes: Likes
+        op_likes: Original Post Likes
+        views: Views
+        posts: Posts
+        activity: Activity
+        posters: Posters
+        category: Category
+        created: Created
+      sort_ascending: Ascending
+      sort_descending: Descending
+    flagging:
+      title: Thanks for helping to keep our community civil!
+      action: Flag Post
+      take_action: Take Action
+      notify_action: Message
+      official_warning: Official Warning
+      delete_spammer: Delete Spammer
+      delete_confirm_MF: You are about to delete {POSTS, plural, one {<b>1</b> post} other {<b>#</b> posts}} and {TOPICS, plural, one {<b>1</b> topic} other {<b>#</b> topics}} from this user, remove their account, block signups from their IP address <b>{ip_address}</b>, and add their email address <b>{email}</b> to a permanent block list. Are you sure this user is really a spammer?
+      yes_delete_spammer: Yes, Delete Spammer
+      ip_address_missing: "(N/A)"
+      hidden_email_address: "(hidden)"
+      submit_tooltip: Submit the private flag
+      take_action_tooltip: Reach the flag threshold immediately, rather than waiting for more community flags
+      cant: Sorry, you can't flag this post at this time.
+      notify_staff: Notify staff privately
+      formatted_name:
+        off_topic: It's Off-Topic
+        inappropriate: It's Inappropriate
+        spam: It's Spam
+      custom_placeholder_notify_user: Be specific, be constructive, and always be kind.
+      custom_placeholder_notify_moderators: Let us know specifically what you are concerned about, and provide relevant links and examples where possible.
+      custom_message:
+        at_least:
+          one: enter at least 1 character
+          other: enter at least {{count}} characters
+        more:
+          one: 1 to go...
+          other: "{{count}} to go..."
+        left:
+          one: 1 remaining
+          other: "{{count}} remaining"
+    flagging_topic:
+      title: Thanks for helping to keep our community civil!
+      action: Flag Topic
+      notify_action: Message
+    topic_map:
+      title: Topic Summary
+      participants_title: Frequent Posters
+      links_title: Popular Links
+      links_shown: show more links...
+      clicks:
+        one: 1 click
+        other: "%{count} clicks"
+    post_links:
+      about: expand more links for this post
+      title:
+        one: 1 more
+        other: "%{count} more"
     topic_statuses:
+      warning:
+        help: This is an official warning.
+      bookmarked:
+        help: You bookmarked this topic
       locked:
-        help: "Topik ini telah ditutup; tidak lagi menerima jawaban baru"
+        help: Topik ini telah ditutup; tidak lagi menerima jawaban baru
+      archived:
+        help: This topic is archived; it is frozen and cannot be changed
       locked_and_archived:
-        help: "Topik ini telah ditutup dan diarsip; tidak lagi menerima jawaban baru dan tidak dapat dirubah lagi"
-    posts: "Pos"
-    likes: "Suka"
-    users: "Pengguna"
+        help: Topik ini telah ditutup dan diarsip; tidak lagi menerima jawaban baru dan tidak dapat dirubah lagi
+      unpinned:
+        title: Unpinned
+        help: This topic is unpinned for you; it will display in regular order
+      pinned_globally:
+        title: Pinned Globally
+        help: This topic is pinned globally; it will display at the top of latest and its category
+      pinned:
+        title: Pinned
+        help: This topic is pinned for you; it will display at the top of its category
+      invisible:
+        help: This topic is unlisted; it will not be displayed in topic lists, and can only be accessed via a direct link
+    posts: Pos
+    posts_long: there are {{number}} posts in this topic
+    posts_likes_MF: |
+      This topic has {count, plural, one {1 reply} other {# replies}} {ratio, select,
+        low {with a high like to post ratio}
+        med {with a very high like to post ratio}
+        high {with an extremely high like to post ratio}
+        other {}}
+    original_post: Original Post
+    views: Views
+    views_lowercase:
+      one: view
+      other: views
+    replies: Replies
+    views_long:
+      one: this topic has been viewed 1 time
+      other: this topic has been viewed {{number}} times
+    activity: Activity
+    likes: Suka
+    likes_lowercase:
+      one: like
+      other: likes
+    likes_long: there are {{number}} likes in this topic
+    users: Pengguna
+    users_lowercase:
+      one: user
+      other: users
+    category_title: Category
+    history: History
+    changed_by: by {{author}}
+    raw_email:
+      title: Raw Email
+      not_available: Not available!
+    categories_list: Categories List
     filters:
+      with_topics: "%{filter} topics"
+      with_category: "%{filter} %{category} topics"
+      latest:
+        title: Latest
+        title_with_count:
+          one: Latest (1)
+          other: Latest ({{count}})
+        help: topics with recent posts
+      hot:
+        title: Hot
+        help: a selection of the hottest topics
+      read:
+        title: Read
+        help: topics you've read, in the order that you last read them
+      search:
+        title: Search
+        help: search all topics
+      categories:
+        title: Categories
+        title_in: Category - {{categoryName}}
+        help: all topics grouped by category
+      unread:
+        title: Unread
+        title_with_count:
+          one: Unread (1)
+          other: Unread ({{count}})
+        help: topics you are currently watching or tracking with unread posts
+        lower_title_with_count:
+          one: 1 unread
+          other: "{{count}} unread"
       new:
         lower_title_with_count:
+          one: 1 new
           other: "{{count}} baru"
-        lower_title: "baru"
-        title: "Baru"
+        lower_title: baru
+        title: Baru
         title_with_count:
-          other: "Baru ({{count}})"
+          one: New (1)
+          other: Baru ({{count}})
+        help: topics created in the last few days
+      posted:
+        title: My Posts
+        help: topics you have posted in
+      bookmarks:
+        title: Bookmarks
+        help: topics you have bookmarked
       category:
-        help: "topik terakhir di kategori {{categoryName}}"
+        title: "{{categoryName}}"
+        title_with_count:
+          one: "{{categoryName}} (1)"
+          other: "{{categoryName}} ({{count}})"
+        help: topik terakhir di kategori {{categoryName}}
       top:
+        title: Top
+        help: the most active topics in the last year, month, week or day
         all:
-          title: "Sepanjang Waktu"
-        all_time: "Sepanjang Waktu"
-  admin_js:
-    admin:
-      title: 'Admin Discourse'
-      moderator: 'Moderator'
-      dashboard:
-        latest_version: "Terbaru"
-        last_checked: "Terakhir dicek"
-        reports:
-          last_7_days: "7 Hari Terakhir"
-          last_30_days: "30 Hari Terakhir"
-          all_time: "Sepanjang Waktu"
-      flags:
-        system: "Sistem"
+          title: Sepanjang Waktu
+        yearly:
+          title: Yearly
+        quarterly:
+          title: Quarterly
+        monthly:
+          title: Monthly
+        weekly:
+          title: Weekly
+        daily:
+          title: Daily
+        all_time: Sepanjang Waktu
+        this_year: Year
+        this_quarter: Quarter
+        this_month: Month
+        this_week: Week
+        today: Today
+        other_periods: see top
+    browser_update: Unfortunately, <a href="http://www.discourse.org/faq/#browser">your browser is too old to work on this site</a>. Please <a href="http://browsehappy.com">upgrade your browser</a>.
+    permission_types:
+      full: Create / Reply / See
+      create_post: Reply / See
+      readonly: See
+    lightbox:
+      download: download
+    keyboard_shortcuts_help:
+      title: Keyboard Shortcuts
+      jump_to:
+        title: Jump To
+        home: "<b>g</b>, <b>h</b> Home"
+        latest: "<b>g</b>, <b>l</b> Latest"
+        new: "<b>g</b>, <b>n</b> New"
+        unread: "<b>g</b>, <b>u</b> Unread"
+        categories: "<b>g</b>, <b>c</b> Categories"
+        top: "<b>g</b>, <b>t</b> Top"
+        bookmarks: "<b>g</b>, <b>b</b> Bookmarks"
+        profile: "<b>g</b>, <b>p</b> Profile"
+        messages: "<b>g</b>, <b>m</b> Messages"
+      navigation:
+        title: Navigation
+        jump: "<b>#</b> Go to post #"
+        back: "<b>u</b> Back"
+        up_down: "<b>k</b>/<b>j</b> Move selection &uarr; &darr;"
+        open: "<b>o</b> or <b>Enter</b> Open selected topic"
+        next_prev: "<b>shift</b>+<b>j</b>/<b>shift</b>+<b>k</b> Next/previous section"
+      application:
+        title: Application
+        create: "<b>c</b> Create a new topic"
+        notifications: "<b>n</b> Open notifications"
+        hamburger_menu: "<b>=</b> Open hamburger menu"
+        user_profile_menu: "<b>p</b> Open user menu"
+        show_incoming_updated_topics: "<b>.</b> Show updated topics"
+        search: "<b>/</b> Search"
+        help: "<b>?</b> Open keyboard help"
+        dismiss_new_posts: "<b>x</b>, <b>r</b> Dismiss New/Posts"
+        dismiss_topics: "<b>x</b>, <b>t</b> Dismiss Topics"
+        log_out: "<b>shift</b>+<b>z</b> <b>shift</b>+<b>z</b> Log Out"
+      actions:
+        title: Actions
+        bookmark_topic: "<b>f</b> Toggle bookmark topic"
+        pin_unpin_topic: "<b>shift</b>+<b>p</b> Pin/Unpin topic"
+        share_topic: "<b>shift</b>+<b>s</b> Share topic"
+        share_post: "<b>s</b> Share post"
+        reply_as_new_topic: "<b>t</b> Reply as linked topic"
+        reply_topic: "<b>shift</b>+<b>r</b> Reply to topic"
+        reply_post: "<b>r</b> Reply to post"
+        quote_post: "<b>q</b> Quote post"
+        like: "<b>l</b> Like post"
+        flag: "<b>!</b> Flag post"
+        bookmark: "<b>b</b> Bookmark post"
+        edit: "<b>e</b> Edit post"
+        delete: "<b>d</b> Delete post"
+        mark_muted: "<b>m</b>, <b>m</b> Mute topic"
+        mark_regular: "<b>m</b>, <b>r</b> Regular (default) topic"
+        mark_tracking: "<b>m</b>, <b>t</b> Track topic"
+        mark_watching: "<b>m</b>, <b>w</b> Watch topic"
+        print: "<b>ctrl</b>+<b>p</b> Print topic"
+    badges:
+      earned_n_times:
+        one: Earned this badge 1 time
+        other: Earned this badge %{count} times
+      granted_on: Granted %{date}
+      others_count: Others with this badge (%{count})
+      title: Badges
+      allow_title: available title
+      multiple_grant: awarded multiple times
+      badge_count:
+        one: 1 Badge
+        other: "%{count} Badges"
+      more_badges:
+        one: "+1 More"
+        other: "+%{count} More"
+      granted:
+        one: 1 granted
+        other: "%{count} granted"
+      select_badge_for_title: Select a badge to use as your title
+      none: "<none>"
+      badge_grouping:
+        getting_started:
+          name: Getting Started
+        community:
+          name: Community
+        trust_level:
+          name: Trust Level
+        other:
+          name: Other
+        posting:
+          name: Posting
+    google_search: |
+      <h3>Search with Google</h3>
+      <p>
+        <form action='//google.com/search' id='google-search' onsubmit="document.getElementById('google-query').value = 'site:' + window.location.host + ' ' + document.getElementById('user-query').value; return true;">
+          <input type="text" id='user-query' value="">
+          <input type='hidden' id='google-query' name="q">
+          <button class="btn btn-primary">Google</button>
+        </form>
+      </p>
+    tagging:
+      all_tags: All Tags
+      selector_all_tags: all tags
+      selector_no_tags: no tags
+      changed: 'tags changed:'
+      tags: Tags
+      choose_for_topic: choose optional tags for this topic
+      delete_tag: Delete Tag
+      delete_confirm: Are you sure you want to delete that tag?
+      rename_tag: Rename Tag
+      rename_instructions: 'Choose a new name for the tag:'
+      sort_by: 'Sort by:'
+      sort_by_count: count
+      sort_by_name: name
+      manage_groups: Manage Tag Groups
+      manage_groups_description: Define groups to organize tags
+      filters:
+        without_category: "%{filter} %{tag} topics"
+        with_category: "%{filter} %{tag} topics in %{category}"
+        untagged_without_category: "%{filter} untagged topics"
+        untagged_with_category: "%{filter} untagged topics in %{category}"
+      notifications:
+        watching:
+          title: Watching
+          description: You will automatically watch all topics in this tag. You will be notified of all new posts and topics, plus the count of unread and new posts will also appear next to the topic.
+        watching_first_post:
+          title: Watching First Post
+          description: You will only be notified of the first post in each new topic in this tag.
+        tracking:
+          title: Tracking
+          description: You will automatically track all topics in this tag. A count of unread and new posts will appear next to the topic.
+        regular:
+          title: Regular
+          description: You will be notified if someone mentions your @name or replies to your post.
+        muted:
+          title: Muted
+          description: You will not be notified of anything about new topics in this tag, and they will not appear on your unread tab.
       groups:
-        new: "Baru"
-        delete: "Hapus"
-        delete_confirm: "Hapus grup ini?"
+        title: Tag Groups
+        about: Add tags to groups to manage them more easily.
+        new: New Group
+        tags_label: 'Tags in this group:'
+        parent_tag_label: 'Parent tag:'
+        parent_tag_placeholder: Optional
+        parent_tag_description: Tags from this group can't be used unless the parent tag is present.
+        one_per_topic_label: Limit one tag per topic from this group
+        new_name: New Tag Group
+        save: Save
+        delete: Delete
+        confirm_delete: Are you sure you want to delete this tag group?
+      topics:
+        none:
+          unread: You have no unread topics.
+          new: You have no new topics.
+          read: You haven't read any topics yet.
+          posted: You haven't posted in any topics yet.
+          latest: There are no latest topics.
+          hot: There are no hot topics.
+          bookmarks: You have no bookmarked topics yet.
+          top: There are no top topics.
+          search: There are no search results.
+        bottom:
+          latest: There are no more latest topics.
+          hot: There are no more hot topics.
+          posted: There are no more posted topics.
+          read: There are no more read topics.
+          new: There are no more new topics.
+          unread: There are no more unread topics.
+          top: There are no more top topics.
+          bookmarks: There are no more bookmarked topics.
+          search: There are no more search results.
+    invite:
+      custom_message: Make your invite a little bit more personal by writing a
+      custom_message_link: custom message
+      custom_message_placeholder: Enter your custom message
+      custom_message_template_forum: Hey, you should join this forum!
+      custom_message_template_topic: Hey, I thought you might enjoy this topic!
+    safe_mode:
+      enabled: Safe mode is enabled, to exit safe mode close this browser window
+  admin_js:
+    type_to_filter: type to filter...
+    admin:
+      title: Admin Discourse
+      moderator: Moderator
+      dashboard:
+        title: Dashboard
+        last_updated: 'Dashboard last updated:'
+        version: Version
+        up_to_date: You're up to date!
+        critical_available: A critical update is available.
+        updates_available: Updates are available.
+        please_upgrade: Please upgrade!
+        no_check_performed: A check for updates has not been performed. Ensure sidekiq is running.
+        stale_data: A check for updates has not been performed lately. Ensure sidekiq is running.
+        version_check_pending: Looks like you upgraded recently. Fantastic!
+        installed_version: Installed
+        latest_version: Terbaru
+        problems_found: 'Some problems have been found with your installation of Discourse:'
+        last_checked: Terakhir dicek
+        refresh_problems: Refresh
+        no_problems: No problems were found.
+        moderators: 'Moderators:'
+        admins: 'Admins:'
+        blocked: 'Blocked:'
+        suspended: 'Suspended:'
+        private_messages_short: Msgs
+        private_messages_title: Messages
+        mobile_title: Mobile
+        space_free: "{{size}} free"
+        uploads: uploads
+        backups: backups
+        traffic_short: Traffic
+        traffic: Application web requests
+        page_views: Pageviews
+        page_views_short: Pageviews
+        show_traffic_report: Show Detailed Traffic Report
+        reports:
+          today: Today
+          yesterday: Yesterday
+          last_7_days: 7 Hari Terakhir
+          last_30_days: 30 Hari Terakhir
+          all_time: Sepanjang Waktu
+          7_days_ago: 7 Days Ago
+          30_days_ago: 30 Days Ago
+          all: All
+          view_table: table
+          view_graph: graph
+          refresh_report: Refresh Report
+          start_date: Start Date
+          end_date: End Date
+          groups: All groups
+      commits:
+        latest_changes: 'Latest changes: please update often!'
+        by: by
+      flags:
+        title: Flags
+        old: Old
+        active: Active
+        agree: Agree
+        agree_title: Confirm this flag as valid and correct
+        agree_flag_modal_title: Agree and...
+        agree_flag_hide_post: Agree (hide post + send PM)
+        agree_flag_hide_post_title: Hide this post and automatically send the user a message urging them to edit it
+        agree_flag_restore_post: Agree (restore post)
+        agree_flag_restore_post_title: Restore this post
+        agree_flag: Agree with flag
+        agree_flag_title: Agree with flag and keep the post unchanged
+        defer_flag: Defer
+        defer_flag_title: Remove this flag; it requires no action at this time.
+        delete: Delete
+        delete_title: Delete the post this flag refers to.
+        delete_post_defer_flag: Delete post and Defer flag
+        delete_post_defer_flag_title: Delete post; if the first post, delete the topic
+        delete_post_agree_flag: Delete post and Agree with flag
+        delete_post_agree_flag_title: Delete post; if the first post, delete the topic
+        delete_flag_modal_title: Delete and...
+        delete_spammer: Delete Spammer
+        delete_spammer_title: Remove the user and all posts and topics by this user.
+        disagree_flag_unhide_post: Disagree (unhide post)
+        disagree_flag_unhide_post_title: Remove any flags from this post and make the post visible again
+        disagree_flag: Disagree
+        disagree_flag_title: Deny this flag as invalid or incorrect
+        clear_topic_flags: Done
+        clear_topic_flags_title: The topic has been investigated and issues have been resolved. Click Done to remove the flags.
+        more: "(more replies...)"
+        dispositions:
+          agreed: agreed
+          disagreed: disagreed
+          deferred: deferred
+        flagged_by: Flagged by
+        resolved_by: Resolved by
+        took_action: Took action
+        system: Sistem
+        error: Something went wrong
+        reply_message: Reply
+        no_results: There are no flags.
+        topic_flagged: This <strong>topic</strong> has been flagged.
+        visit_topic: Visit the topic to take action
+        was_edited: Post was edited after the first flag
+        previous_flags_count: This post has already been flagged {{count}} times.
+        summary:
+          action_type_3:
+            one: off-topic
+            other: off-topic x{{count}}
+          action_type_4:
+            one: inappropriate
+            other: inappropriate x{{count}}
+          action_type_6:
+            one: custom
+            other: custom x{{count}}
+          action_type_7:
+            one: custom
+            other: custom x{{count}}
+          action_type_8:
+            one: spam
+            other: spam x{{count}}
+      groups:
+        primary: Primary Group
+        no_primary: "(no primary group)"
+        title: Groups
+        edit: Edit Groups
+        refresh: Refresh
+        new: Baru
+        selector_placeholder: enter username
+        about: Edit your group membership and names here
+        group_members: Group members
+        delete: Hapus
+        delete_confirm: Hapus grup ini?
+        delete_failed: Unable to delete group. If this is an automatic group, it cannot be destroyed.
+        delete_owner_confirm: Remove owner privilege for '%{username}'?
+        add: Add
+        add_members: Add members
+        custom: Custom
+        bulk_complete: The users have been added to the group.
+        bulk: Bulk Add to Group
+        bulk_paste: 'Paste a list of usernames or emails, one per line:'
+        bulk_select: "(select a group)"
+        automatic: Automatic
+        automatic_membership_email_domains: 'Users who register with an email domain that exactly matches one in this list will be automatically added to this group:'
+        automatic_membership_retroactive: Apply the same email domain rule to add existing registered users
+        default_title: Default title for all users in this group
+        primary_group: Automatically set as primary group
+        group_owners: Owners
+        add_owners: Add owners
+        incoming_email: Custom incoming email address
+        incoming_email_placeholder: enter email address
+      api:
+        generate_master: Generate Master API Key
+        none: There are no active API keys right now.
+        user: User
+        title: API
+        key: API Key
+        generate: Generate
+        regenerate: Regenerate
+        revoke: Revoke
+        confirm_regen: Are you sure you want to replace that API Key with a new one?
+        confirm_revoke: Are you sure you want to revoke that key?
+        info_html: Your API key will allow you to create and update topics using JSON calls.
+        all_users: All Users
+        note_html: Keep this key <strong>secret</strong>, all users that have it may create arbitrary posts as any user.
+      web_hooks:
+        title: Webhooks
+        none: There are no webhooks right now.
+        instruction: Webhooks allows Discourse to notify external services when certain event happens in your site. When the webhook is triggered, a POST request will send to URLs provided.
+        detailed_instruction: A POST request will be sent to provided URL when chosen event happens.
+        new: New Webhook
+        create: Create
+        save: Save
+        destroy: Delete
+        description: Description
+        controls: Controls
+        go_back: Back to list
+        payload_url: Payload URL
+        payload_url_placeholder: https://example.com/postreceive
+        warn_local_payload_url: It seems you are trying to set up the webhook to a local url. Event delivered to a local address may cause side-effect or unexpected behaviours. Continue?
+        secret_invalid: Secret must not have any blank characters.
+        secret_too_short: Secret should be at least 12 characters.
+        secret_placeholder: An optional string, used for generating signature
+        event_type_missing: You need to set up at least one event type.
+        content_type: Content Type
+        secret: Secret
+        event_chooser: Which events would you like to trigger this webhook?
+        wildcard_event: Send me everything.
+        individual_event: Select individual events.
+        verify_certificate: Check TLS certificate of payload url
+        active: Active
+        active_notice: We will deliver event details when it happens.
+        categories_filter_instructions: Relevant webhooks will only be triggered if the event is related with specified categories. Leave blank to trigger webhooks for all categories.
+        categories_filter: Triggered Categories
+        groups_filter_instructions: Relevant webhooks will only be triggered if the event is related with specified groups. Leave blank to trigger webhooks for all groups.
+        groups_filter: Triggered Groups
+        delete_confirm: Delete this webhook?
+        topic_event:
+          name: Topic Event
+          details: When there is a new topic, revised, changed or deleted.
+        post_event:
+          name: Post Event
+          details: When there is a new reply, edit, deleted or recovered.
+        user_event:
+          name: User Event
+          details: When a user is created, approved or updated.
+        delivery_status:
+          title: Delivery Status
+          inactive: Inactive
+          failed: Failed
+          successful: Successful
+        events:
+          none: There are no related events.
+          redeliver: Redeliver
+          incoming:
+            one: There is a new event.
+            other: There are {{count}} new events.
+          completed_in:
+            one: Completed in 1 second.
+            other: Completed in {{count}} seconds.
+          request: Request
+          response: Response
+          redeliver_confirm: Are you sure you want to redeliver the same payload?
+          headers: Headers
+          payload: Payload
+          body: Body
+          go_list: Go to list
+          go_details: Edit webhook
+          go_events: Go to events
+          ping: Ping
+          status: Status Code
+          event_id: ID
+          timestamp: Created
+          completion: Completion Time
+          actions: Actions
+      plugins:
+        title: Plugins
+        installed: Installed Plugins
+        name: Name
+        none_installed: You don't have any plugins installed.
+        version: Version
+        enabled: Enabled?
+        is_enabled: Y
+        not_enabled: N
+        change_settings: Change Settings
+        change_settings_short: Settings
+        howto: How do I install plugins?
       backups:
+        title: Backups
+        menu:
+          backups: Backups
+          logs: Logs
+        none: No backup available.
+        read_only:
+          enable:
+            title: Enable read-only mode
+            label: Enable read-only
+            confirm: Are you sure you want to enable read-only mode?
+          disable:
+            title: Disable read-only mode
+            label: Disable read-only
+        logs:
+          none: No logs yet...
+        columns:
+          filename: Filename
+          size: Size
+        upload:
+          label: Upload
+          title: Upload a backup to this instance
+          uploading: Uploading...
+          success: "'{{filename}}' has successfully been uploaded."
+          error: 'There has been an error while uploading ''{{filename}}'': {{message}}'
         operations:
+          is_running: An operation is currently running...
+          failed: The {{operation}} failed. Please check the logs.
           cancel:
-            label: "Batal"
+            label: Batal
+            title: Cancel the current operation
+            confirm: Are you sure you want to cancel the current operation?
+          backup:
+            label: Backup
+            title: Create a backup
+            confirm: Do you want to start a new backup?
+            without_uploads: Yes (do not include files)
+          download:
+            label: Download
+            title: Download the backup
+          destroy:
+            title: Remove the backup
+            confirm: Are you sure you want to destroy this backup?
+          restore:
+            is_disabled: Restore is disabled in the site settings.
+            label: Restore
+            title: Restore the backup
+            confirm: Are you sure you want to restore this backup?
+          rollback:
+            label: Rollback
+            title: Rollback the database to previous working state
+            confirm: Are you sure you want to rollback the database to the previous working state?
+      export_csv:
+        success: Export initiated, you will be notified via message when the process is complete.
+        failed: Export failed. Please check the logs.
+        button_text: Export
+        button_title:
+          user: Export full user list in CSV format.
+          staff_action: Export full staff action log in CSV format.
+          screened_email: Export full screened email list in CSV format.
+          screened_ip: Export full screened IP list in CSV format.
+          screened_url: Export full screened URL list in CSV format.
+      export_json:
+        button_text: Export
+      invite:
+        button_text: Send Invites
+        button_title: Send Invites
       customize:
-        preview: "pratinjau"
-        new: "New"
-        new_style: "preview"
-        delete: "Hapus"
+        title: Customize
+        long_title: Site Customizations
+        css: CSS
+        header: Header
+        top: Top
+        footer: Footer
+        embedded_css: Embedded CSS
+        head_tag:
+          text: "</head>"
+          title: HTML that will be inserted before the </head> tag
+        body_tag:
+          text: "</body>"
+          title: HTML that will be inserted before the </body> tag
+        override_default: Do not include standard style sheet
+        enabled: Enabled?
+        preview: pratinjau
+        undo_preview: remove preview
+        rescue_preview: default style
+        explain_preview: See the site with this custom stylesheet
+        explain_undo_preview: Go back to the currently enabled custom stylesheet
+        explain_rescue_preview: See the site with the default stylesheet
+        save: Save
+        new: New
+        new_style: preview
+        import: Import
+        import_title: Select a file or paste text
+        delete: Hapus
+        delete_confirm: Delete this customization?
+        about: Modify CSS stylesheets and HTML headers on the site. Add a customization to start.
+        color: Color
+        opacity: Opacity
+        copy: Copy
+        email_templates:
+          title: Email Templates
+          subject: Subject
+          multiple_subjects: This email template has multiple subjects.
+          body: Body
+          none_selected: Select an email template to begin editing.
+          revert: Revert Changes
+          revert_confirm: Are you sure you want to revert your changes?
+        css_html:
+          title: CSS/HTML
+          long_title: CSS and HTML Customizations
+        colors:
+          title: Colors
+          long_title: Color Schemes
+          about: Modify the colors used on the site without writing CSS. Add a scheme to start.
+          new_name: New Color Scheme
+          copy_name_prefix: Copy of
+          delete_confirm: Delete this color scheme?
+          undo: undo
+          undo_title: Undo your changes to this color since the last time it was saved.
+          revert: revert
+          revert_title: Reset this color to Discourse's default color scheme.
+          primary:
+            name: primary
+            description: Most text, icons, and borders.
+          secondary:
+            name: secondary
+            description: The main background color, and text color of some buttons.
+          tertiary:
+            name: tertiary
+            description: Links, some buttons, notifications, and accent color.
+          quaternary:
+            name: quaternary
+            description: Navigation links.
+          header_background:
+            name: header background
+            description: Background color of the site's header.
+          header_primary:
+            name: header primary
+            description: Text and icons in the site's header.
+          highlight:
+            name: highlight
+            description: The background color of highlighted elements on the page, such as posts and topics.
+          danger:
+            name: danger
+            description: Highlight color for actions like deleting posts and topics.
+          success:
+            name: success
+            description: Used to indicate an action was successful.
+          love:
+            name: love
+            description: The like button's color.
       email:
-        to_address: "Kepada Alamat"
-        test_email_address: "alamat email uji coba"
-        sent_test: "terkirim!"
-        delivery_method: "Metode Pengiriman"
-        html: "html"
+        title: Emails
+        settings: Settings
+        templates: Templates
+        preview_digest: Preview Digest
+        sending_test: Sending test Email...
+        error: "<b>ERROR</b> - %{server_error}"
+        test_error: There was a problem sending the test email. Please double-check your mail settings, verify that your host is not blocking mail connections, and try again.
+        sent: Sent
+        skipped: Skipped
+        bounced: Bounced
+        received: Received
+        rejected: Rejected
+        sent_at: Sent At
+        time: Time
+        user: User
+        email_type: Email Type
+        to_address: Kepada Alamat
+        test_email_address: alamat email uji coba
+        send_test: Send Test Email
+        sent_test: terkirim!
+        delivery_method: Metode Pengiriman
+        preview_digest_desc: Preview the content of the digest emails sent to inactive users.
+        refresh: Refresh
+        send_digest_label: 'Send this result to:'
+        send_digest: Send
+        sending_email: Sending email...
+        format: Format
+        html: html
+        text: text
+        last_seen_user: 'Last Seen User:'
+        no_result: No results found for digest.
+        reply_key: Reply Key
+        skipped_reason: Skip Reason
+        incoming_emails:
+          from_address: From
+          to_addresses: To
+          cc_addresses: Cc
+          subject: Subject
+          error: Error
+          none: No incoming emails found.
+          modal:
+            title: Incoming Email Details
+            error: Error
+            headers: Headers
+            subject: Subject
+            body: Body
+            rejection_message: Rejection Mail
+          filters:
+            from_placeholder: from@example.com
+            to_placeholder: to@example.com
+            cc_placeholder: cc@example.com
+            subject_placeholder: Subject...
+            error_placeholder: Error
+        logs:
+          none: No logs found.
+          filters:
+            title: Filter
+            user_placeholder: username
+            address_placeholder: name@example.com
+            type_placeholder: digest, signup...
+            reply_key_placeholder: reply key
+            skipped_reason_placeholder: reason
       logs:
-        edit: 'Ubah'
+        title: Logs
+        action: Action
+        created_at: Created
+        last_match_at: Last Matched
+        match_count: Matches
+        ip_address: IP
+        topic_id: Topic ID
+        post_id: Post ID
+        category_id: Category ID
+        delete: Delete
+        edit: Ubah
+        save: Save
+        screened_actions:
+          block: block
+          do_nothing: do nothing
         staff_actions:
-          new_value: "Baru"
-          deleted: "Tidak ada nilai baru. Catatan telah dihapus."
+          title: Staff Actions
+          instructions: Click usernames and actions to filter the list. Click profile pictures to go to user pages.
+          clear_filters: Show Everything
+          staff_user: Staff User
+          target_user: Target User
+          subject: Subject
+          when: When
+          context: Context
+          details: Details
+          previous_value: Previous
+          new_value: Baru
+          diff: Diff
+          show: Show
+          modal_title: Details
+          no_previous: There is no previous value.
+          deleted: Tidak ada nilai baru. Catatan telah dihapus.
+          actions:
+            delete_user: delete user
+            change_trust_level: change trust level
+            change_username: change username
+            change_site_setting: change site setting
+            change_site_customization: change site customization
+            delete_site_customization: delete site customization
+            change_site_text: change site text
+            suspend_user: suspend user
+            unsuspend_user: unsuspend user
+            grant_badge: grant badge
+            revoke_badge: revoke badge
+            check_email: check email
+            delete_topic: delete topic
+            delete_post: delete post
+            impersonate: impersonate
+            anonymize_user: anonymize user
+            roll_up: roll up IP blocks
+            change_category_settings: change category settings
+            delete_category: delete category
+            create_category: create category
+            block_user: block user
+            unblock_user: unblock user
+            grant_admin: grant admin
+            revoke_admin: revoke admin
+            grant_moderation: grant moderation
+            revoke_moderation: revoke moderation
+            backup_create: create backup
+            deleted_tag: deleted tag
+            renamed_tag: renamed tag
+            revoke_email: revoke email
+            lock_trust_level: lock trust level
+            unlock_trust_level: unlock trust level
+            activate_user: activate user
+            deactivate_user: deactivate user
+            change_readonly_mode: change readonly mode
+            backup_download: download backup
+            backup_destroy: destroy backup
         screened_emails:
-          email: "Alamat Email"
+          title: Screened Emails
+          description: When someone tries to create a new account, the following email addresses will be checked and the registration will be blocked, or some other action performed.
+          email: Alamat Email
+          actions:
+            allow: Allow
+        screened_urls:
+          title: Screened URLs
+          description: The URLs listed here were used in posts by users who have been identified as spammers.
+          url: URL
+          domain: Domain
         screened_ips:
-          description: 'Alamat IP sedang dalam pengawasan. Gunakan "Allow" atau "Ijinkan" untuk memasukkan alamat IP dalam daftar putih.'
+          title: Screened IPs
+          description: Alamat IP sedang dalam pengawasan. Gunakan "Allow" atau "Ijinkan" untuk memasukkan alamat IP dalam daftar putih.
+          delete_confirm: Are you sure you want to remove the rule for %{ip_address}?
+          roll_up_confirm: Are you sure you want to roll up commonly screened IP addresses into subnets?
+          rolled_up_some_subnets: 'Successfully rolled up IP ban entries to these subnets: %{subnets}.'
+          rolled_up_no_subnet: There was nothing to roll up.
+          actions:
+            block: Block
+            do_nothing: Allow
+            allow_admin: Allow Admin
           form:
-            label: "Baru:"
-            ip_address: "Alamat IP"
+            label: 'Baru:'
+            ip_address: Alamat IP
+            add: Add
+            filter: Search
+          roll_up:
+            text: Roll up
+            title: Creates new subnet ban entries if there are at least 'min_ban_entries_for_roll_up' entries.
+        logster:
+          title: Error Logs
+      impersonate:
+        title: Impersonate
+        help: Use this tool to impersonate a user account for debugging purposes. You will have to log out once finished.
+        not_found: That user can't be found.
+        invalid: Sorry, you may not impersonate that user.
       users:
-        not_found: "Maaf, username tersebut tidak ada ditemukan."
-        active: "Aktif"
+        title: Users
+        create: Add Admin User
+        last_emailed: Last Emailed
+        not_found: Maaf, username tersebut tidak ada ditemukan.
+        id_not_found: Sorry, that user id doesn't exist in our system.
+        active: Aktif
+        show_emails: Show Emails
         nav:
-          new: "Baru"
-          staff: 'Staf'
+          new: Baru
+          active: Active
+          pending: Pending
+          staff: Staf
+          suspended: Suspended
+          blocked: Blocked
+          suspect: Suspect
+        approved: Approved?
+        approved_selected:
+          one: approve user
+          other: approve users ({{count}})
+        reject_selected:
+          one: reject user
+          other: reject users ({{count}})
         titles:
-          new: 'Pengguna Baru'
-          staff: "Staf"
+          active: Active Users
+          new: Pengguna Baru
+          pending: Users Pending Review
+          newuser: Users at Trust Level 0 (New User)
+          basic: Users at Trust Level 1 (Basic User)
+          member: Users at Trust Level 2 (Member)
+          regular: Users at Trust Level 3 (Regular)
+          leader: Users at Trust Level 4 (Leader)
+          staff: Staf
+          admins: Admin Users
+          moderators: Moderators
+          blocked: Blocked Users
+          suspended: Suspended Users
+          suspect: Suspect Users
+        reject_successful:
+          one: Successfully rejected 1 user.
+          other: Successfully rejected %{count} users.
+        reject_failures:
+          one: Failed to reject 1 user.
+          other: Failed to reject %{count} users.
+        not_verified: Not verified
         check_email:
-          title: "Tampilkan alamat email pengguna ini"
+          title: Tampilkan alamat email pengguna ini
+          text: Show
       user:
+        suspend_failed: Something went wrong suspending this user {{error}}
+        unsuspend_failed: Something went wrong unsuspending this user {{error}}
+        suspend_duration: How long will the user be suspended for?
         suspend_duration_units: "(hari)"
-        suspend_reason: "Alasan"
-        approve: 'Terima'
-        delete: "Hapus Pengguna"
-        delete_and_block: "Hapus dan <b>block</b> email dan alamat IP ini"
+        suspend_reason_label: Why are you suspending? This text <b>will be visible to everyone</b> on this user's profile page, and will be shown to the user when they try to log in. Keep it short.
+        suspend_reason: Alasan
+        suspended_by: Suspended by
+        delete_all_posts: Delete all posts
+        delete_all_posts_confirm_MF: You are about to delete {POSTS, plural, one {1 post} other {# posts}} and {TOPICS, plural, one {1 topic} other {# topics}}. Are you sure?
+        suspend: Suspend
+        unsuspend: Unsuspend
+        suspended: Suspended?
+        moderator: Moderator?
+        admin: Admin?
+        blocked: Blocked?
+        staged: Staged?
+        show_admin_profile: Admin
+        edit_title: Edit Title
+        save_title: Save Title
+        refresh_browsers: Force browser refresh
+        refresh_browsers_message: Message sent to all clients!
+        show_public_profile: Show Public Profile
+        impersonate: Impersonate
+        ip_lookup: IP Lookup
+        log_out: Log Out
+        logged_out: User was logged out on all devices
+        revoke_admin: Revoke Admin
+        grant_admin: Grant Admin
+        revoke_moderation: Revoke Moderation
+        grant_moderation: Grant Moderation
+        unblock: Unblock
+        block: Block
+        reputation: Reputation
+        permissions: Permissions
+        activity: Activity
+        like_count: Likes Given / Received
+        last_100_days: in the last 100 days
+        private_topics_count: Private Topics
+        posts_read_count: Posts Read
+        post_count: Posts Created
+        topics_entered: Topics Viewed
+        flags_given_count: Flags Given
+        flags_received_count: Flags Received
+        warnings_received_count: Warnings Received
+        flags_given_received_count: Flags Given / Received
+        approve: Terima
+        approved_by: approved by
+        approve_success: User approved and email sent with activation instructions.
+        approve_bulk_success: Success! All selected users have been approved and notified.
+        time_read: Read Time
+        anonymize: Anonymize User
+        anonymize_confirm: Are you SURE you want to anonymize this account? This will change the username and email, and reset all profile information.
+        anonymize_yes: Yes, anonymize this account
+        anonymize_failed: There was a problem anonymizing the account.
+        delete: Hapus Pengguna
+        delete_forbidden_because_staff: Admins and moderators can't be deleted.
+        delete_posts_forbidden_because_staff: Can't delete all posts of admins and moderators.
+        delete_forbidden:
+          one: Users can't be deleted if they have posts. Delete all posts before trying to delete a user. (Posts older than %{count} day old can't be deleted.)
+          other: Users can't be deleted if they have posts. Delete all posts before trying to delete a user. (Posts older than %{count} days old can't be deleted.)
+        cant_delete_all_posts:
+          one: Can't delete all posts. Some posts are older than %{count} day old. (The delete_user_max_post_age setting.)
+          other: Can't delete all posts. Some posts are older than %{count} days old. (The delete_user_max_post_age setting.)
+        cant_delete_all_too_many_posts:
+          one: Can't delete all posts because the user has more than 1 post. (delete_all_posts_max)
+          other: Can't delete all posts because the user has more than %{count} posts.  (delete_all_posts_max)
+        delete_confirm: Are you SURE you want to delete this user? This is permanent!
+        delete_and_block: Hapus dan <b>block</b> email dan alamat IP ini
+        delete_dont_block: Delete only
+        deleted: The user was deleted.
+        delete_failed: There was an error deleting that user. Make sure all posts are deleted before trying to delete the user.
+        send_activation_email: Send Activation Email
+        activation_email_sent: An activation email has been sent.
+        send_activation_email_failed: There was a problem sending another activation email. %{error}
+        activate: Activate Account
+        activate_failed: There was a problem activating the user.
+        deactivate_account: Deactivate Account
+        deactivate_failed: There was a problem deactivating the user.
+        unblock_failed: There was a problem unblocking the user.
+        block_failed: There was a problem blocking the user.
+        block_confirm: Are you sure you want to block this user? They will not be able to create any new topics or posts.
+        block_accept: Yes, block this user
+        bounce_score: Bounce Score
+        reset_bounce_score:
+          label: Reset
+          title: Reset bounce score back to 0
+        deactivate_explanation: A deactivated user must re-validate their email.
+        suspended_explanation: A suspended user can't log in.
+        block_explanation: A blocked user can't post or start topics.
+        staged_explanation: A staged user can only post via email in specific topics.
+        bounce_score_explanation:
+          none: No bounces were received recently from that email.
+          some: Some bounces were received recently from that email.
+          threshold_reached: Received too many bounces from that email.
+        trust_level_change_failed: There was a problem changing the user's trust level.
+        suspend_modal_title: Suspend User
+        trust_level_2_users: Trust Level 2 Users
+        trust_level_3_requirements: Trust Level 3 Requirements
+        trust_level_locked_tip: trust level is locked, system will not promote or demote user
+        trust_level_unlocked_tip: trust level is unlocked, system will may promote or demote user
+        lock_trust_level: Lock Trust Level
+        unlock_trust_level: Unlock Trust Level
+        tl3_requirements:
+          title: Requirements for Trust Level 3
+          table_title:
+            one: 'In the last day:'
+            other: 'In the last %{count} days:'
+          value_heading: Value
+          requirement_heading: Requirement
+          visits: Visits
+          days: days
+          topics_replied_to: Topics Replied To
+          topics_viewed: Topics Viewed
+          topics_viewed_all_time: Topics Viewed (all time)
+          posts_read: Posts Read
+          posts_read_all_time: Posts Read (all time)
+          flagged_posts: Flagged Posts
+          flagged_by_users: Users Who Flagged
+          likes_given: Likes Given
+          likes_received: Likes Received
+          likes_received_days: 'Likes Received: unique days'
+          likes_received_users: 'Likes Received: unique users'
+          qualifies: Qualifies for trust level 3.
+          does_not_qualify: Doesn't qualify for trust level 3.
+          will_be_promoted: Will be promoted soon.
+          will_be_demoted: Will be demoted soon.
+          on_grace_period: Currently in promotion grace period, will not be demoted.
+          locked_will_not_be_promoted: Trust level locked. Will never be promoted.
+          locked_will_not_be_demoted: Trust level locked. Will never be demoted.
+        sso:
+          title: Single Sign On
+          external_id: External ID
+          external_username: Username
+          external_name: Name
+          external_email: Email
+          external_avatar_url: Profile Picture URL
       user_fields:
-        edit: "Ubah"
-        cancel: "Batal"
+        title: User Fields
+        help: Add fields that your users can fill out.
+        create: Create User Field
+        untitled: Untitled
+        name: Field Name
+        type: Field Type
+        description: Field Description
+        save: Save
+        edit: Ubah
+        delete: Delete
+        cancel: Batal
+        delete_confirm: Are you sure you want to delete that user field?
+        options: Options
+        required:
+          title: Required at signup?
+          enabled: required
+          disabled: not required
+        editable:
+          title: Editable after signup?
+          enabled: editable
+          disabled: not editable
+        show_on_profile:
+          title: Show on public profile?
+          enabled: shown on profile
+          disabled: not shown on profile
+        show_on_user_card:
+          title: Show on user card?
+          enabled: shown on user card
+          disabled: not shown on user card
+        field_types:
+          text: Text Field
+          confirm: Confirmation
+          dropdown: Dropdown
+      site_text:
+        description: 'You can customize any of the text on your forum. Please start by searching below:'
+        search: Search for the text you'd like to edit
+        title: Text Content
+        edit: edit
+        revert: Revert Changes
+        revert_confirm: Are you sure you want to revert your changes?
+        go_back: Back to Search
+        recommended: 'We recommend customizing the following text to suit your needs:'
+        show_overriden: Only show overridden
       site_settings:
+        show_overriden: Only show overridden
+        title: Settings
+        reset: reset
+        none: none
+        no_results: No results found.
+        clear_filter: Clear
+        add_url: add URL
+        add_host: add host
         categories:
-          users: 'Pengguna'
+          all_results: All
+          required: Required
+          basic: Basic Setup
+          users: Pengguna
+          posting: Posting
+          email: Email
+          files: Files
+          trust: Trust Levels
+          security: Security
+          onebox: Onebox
+          seo: SEO
+          spam: Spam
+          rate_limits: Rate Limits
+          developer: Developer
+          embedding: Embedding
+          legal: Legal
+          user_api: User API
+          uncategorized: Other
+          backups: Backups
+          login: Login
+          plugins: Plugins
+          user_preferences: User Preferences
+          tags: Tags
+          search: Search
+          groups: Groups
       badges:
+        title: Badges
         new_badge: Badge Baru
         new: Baru
+        name: Name
+        badge: Badge
+        display_name: Display Name
+        description: Description
+        long_description: Long Description
+        badge_type: Badge Type
+        badge_grouping: Group
+        badge_groupings:
+          modal_title: Badge Groupings
+        granted_by: Granted By
+        granted_at: Granted At
+        reason_help: "(A link to a post or topic)"
+        save: Save
+        delete: Delete
+        delete_confirm: Are you sure you want to delete this badge?
+        revoke: Revoke
+        reason: Reason
+        expand: Expand &hellip;
+        revoke_confirm: Are you sure you want to revoke this badge?
+        edit_badges: Edit Badges
+        grant_badge: Grant Badge
+        granted_badges: Granted Badges
+        grant: Grant
+        no_user_badges: "%{name} has not been granted any badges."
+        no_badges: There are no badges that can be granted.
+        none_selected: Select a badge to get started
+        allow_title: Allow badge to be used as a title
+        multiple_grant: Can be granted multiple times
+        listable: Show badge on the public badges page
+        enabled: Enable badge
+        icon: Icon
+        image: Image
+        icon_help: Use either a Font Awesome class or URL to an image
+        query: Badge Query (SQL)
+        target_posts: Query targets posts
+        auto_revoke: Run revocation query daily
+        show_posts: Show post granting badge on badge page
+        trigger: Trigger
+        trigger_type:
+          none: Update daily
+          post_action: When a user acts on post
+          post_revision: When a user edits or creates a post
+          trust_level_change: When a user changes trust level
+          user_change: When a user is edited or created
+          post_processed: After a post is processed
+        preview:
+          link_text: Preview granted badges
+          plan_text: Preview with query plan
+          modal_title: Badge Query Preview
+          sql_error_header: There was an error with the query.
+          error_help: See the following links for help with badge queries.
+          bad_count_warning:
+            header: WARNING!
+            text: There are missing grant samples. This happens when the badge query returns user IDs or post IDs that do not exist. This may cause unexpected results later on - please double-check your query.
+          no_grant_count: No badges to be assigned.
+          grant_count:
+            one: "<b>1</b> badge to be assigned."
+            other: "<b>%{count}</b> badges to be assigned."
+          sample: 'Sample:'
+          grant:
+            with: <span class="username">%{username}</span>
+            with_post: <span class="username">%{username}</span> for post in %{link}
+            with_post_time: <span class="username">%{username}</span> for post in %{link} at <span class="time">%{time}</span>
+            with_time: <span class="username">%{username}</span> at <span class="time">%{time}</span>
+      emoji:
+        title: Emoji
+        help: 'Add new emoji that will be available to everyone. (PROTIP: drag & drop multiple files at once)'
+        add: Add New Emoji
+        name: Name
+        image: Image
+        delete_confirm: 'Are you sure you want to delete the :%{name}: emoji?'
+      embedding:
+        get_started: If you'd like to embed Discourse on another website, begin by adding its host.
+        confirm_delete: Are you sure you want to delete that host?
+        sample: Use the following HTML code into your site to create and embed discourse topics. Replace <b>REPLACE_ME</b> with the canonical URL of the page you are embedding it on.
+        title: Embedding
+        host: Allowed Hosts
+        path_whitelist: Path Whitelist
+        edit: edit
+        category: Post to Category
+        add_host: Add Host
+        settings: Embedding Settings
+        feed_settings: Feed Settings
+        feed_description: Providing an RSS/ATOM feed for your site can improve Discourse's ability to import your content.
+        crawling_settings: Crawler Settings
+        crawling_description: When Discourse creates topics for your posts, if no RSS/ATOM feed is present it will attempt to parse your content out of your HTML. Sometimes it can be challenging to extract your content, so we provide the ability to specify CSS rules to make extraction easier.
+        embed_by_username: Username for topic creation
+        embed_post_limit: Maximum number of posts to embed
+        embed_username_key_from_feed: Key to pull discourse username from feed
+        embed_title_scrubber: Regular expression used to scrub the title of posts
+        embed_truncate: Truncate the embedded posts
+        embed_whitelist_selector: CSS selector for elements that are allowed in embeds
+        embed_blacklist_selector: CSS selector for elements that are removed from embeds
+        embed_classname_whitelist: Allowed CSS class names
+        feed_polling_enabled: Import posts via RSS/ATOM
+        feed_polling_url: URL of RSS/ATOM feed to crawl
+        save: Save Embedding Settings
+      permalink:
+        title: Permalinks
+        url: URL
+        topic_id: Topic ID
+        topic_title: Topic
+        post_id: Post ID
+        post_title: Post
+        category_id: Category ID
+        category_title: Category
+        external_url: External URL
+        delete_confirm: Are you sure you want to delete this permalink?
+        form:
+          label: 'New:'
+          add: Add
+          filter: Search (URL or External URL)
+  wizard_js:
+    wizard:
+      done: Done
+      back: Back
+      next: Next
+      step: "%{current} of %{total}"
+      upload: Upload
+      uploading: Uploading...
+      quit: Maybe Later
+      staff_count:
+        one: 'Your community has 1 staff member. '
+        other: Your community has %{count} staff members.
+      invites:
+        add_user: add
+        none_added: You haven’t invited any staff. Are you sure you want to continue?
+        roles:
+          admin: Admin
+          moderator: Moderator
+          regular: Regular User

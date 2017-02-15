@@ -35,8 +35,7 @@ en:
       long: "%B %-d, %Y, %l:%M%P"
   date:
     # Do not remove the brackets and commas and do not translate the first month name. It should be "null".
-    month_names:
-      [~, January, February, March, April, May, June, July, August, September, October, November, December]
+    month_names: [~, January, February, March, April, May, June, July, August, September, October, November, December]
     <<: *datetime_formats
   time:
     <<: *datetime_formats

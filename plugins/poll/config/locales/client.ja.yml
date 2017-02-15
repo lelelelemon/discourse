@@ -9,37 +9,61 @@ ja:
   js:
     poll:
       voters:
-        other: "投票者数"
+        one: voter
+        other: 投票者数
       total_votes:
-        other: "合計得票数"
-      average_rating: "平均評価: <strong>%{average}</strong>."
+        one: total vote
+        other: 合計得票数
+      average_rating: '平均評価: <strong>%{average}</strong>.'
+      public:
+        title: Votes are public.
       multiple:
         help:
+          at_least_min_options:
+            one: Choose at least <strong>1</strong> option
+            other: Choose at least <strong>%{count}</strong> options
           up_to_max_options:
+            one: Choose up to <strong>1</strong> option
             other: "<strong>%{count}</strong>個まで選ぶことができます"
+          x_options:
+            one: Choose <strong>1</strong> option
+            other: Choose <strong>%{count}</strong> options
+          between_min_and_max_options: Choose between <strong>%{min}</strong> and <strong>%{max}</strong> options
       cast-votes:
-        title: "投票する"
-        label: "投票する"
+        title: 投票する
+        label: 投票する
       show-results:
-        title: "投票結果を表示"
-        label: "結果を表示"
+        title: 投票結果を表示
+        label: 結果を表示
       hide-results:
-        title: "投票に戻る"
-        label: "結果を非表示にする"
+        title: 投票に戻る
+        label: 結果を非表示にする
       open:
-        title: "投票を開く"
-        label: "開く"
-        confirm: "この投票をオープンにしてもよろしいですか？"
+        title: 投票を開く
+        label: 開く
+        confirm: この投票をオープンにしてもよろしいですか？
       close:
-        title: "投票を締め切る"
-        label: "投票を締め切る"
-        confirm: "この投票を締め切ってもよろしいですか？"
+        title: 投票を締め切る
+        label: 投票を締め切る
+        confirm: この投票を締め切ってもよろしいですか？
+      error_while_toggling_status: Sorry, there was an error toggling the status of this poll.
+      error_while_casting_votes: Sorry, there was an error casting your votes.
+      error_while_fetching_voters: Sorry, there was an error displaying the voters.
       ui_builder:
         title: 投票を作成
+        insert: Insert Poll
+        help:
+          options_count: Enter at least 2 options
         poll_type:
           label: タイプ
           regular: 一つだけ選択
           multiple: 複数選択
           number: 数字で評価
+        poll_config:
+          max: Max
+          min: Min
+          step: Step
         poll_public:
           label: 誰が投票したか表示する
+        poll_options:
+          label: Enter one poll option per line

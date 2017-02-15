@@ -7,6 +7,6 @@
 
 es:
   site_settings:
-    enable_imgur: "Activar la api de imgur para subir imágenes, no almacenarlas como archivos en local"
-    imgur_client_id: "Tu ID de cliente en imgur.com - requerido para la función de subida de imágenes"
-    imgur_client_secret: "Tu clave secreta de cliente en imgur.com - actualmente no requerido para la función de subida de imágenes, pero podría requerirse en algún momento"
+    enable_imgur: Activar la api de imgur para subir imágenes, no almacenarlas como archivos en local
+    imgur_client_id: Tu ID de cliente en imgur.com - requerido para la función de subida de imágenes
+    imgur_client_secret: Tu clave secreta de cliente en imgur.com - actualmente no requerido para la función de subida de imágenes, pero podría requerirse en algún momento

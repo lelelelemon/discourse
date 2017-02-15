@@ -9,46 +9,46 @@ es:
   js:
     poll:
       voters:
-        one: "votante"
-        other: "votantes"
+        one: votante
+        other: votantes
       total_votes:
-        one: "voto total"
-        other: "votos totales"
-      average_rating: "Puntuación media: <strong>%{average}</strong>."
+        one: voto total
+        other: votos totales
+      average_rating: 'Puntuación media: <strong>%{average}</strong>.'
       public:
-        title: "Los votos son públicos."
+        title: Los votos son públicos.
       multiple:
         help:
           at_least_min_options:
-            one: "Elige al menos <strong>1</strong> opción"
-            other: "Elige al menos <strong>%{count}</strong> opciones"
+            one: Elige al menos <strong>1</strong> opción
+            other: Elige al menos <strong>%{count}</strong> opciones
           up_to_max_options:
-            one: "Elige <strong>1</strong> opción"
-            other: "Elige hasta <strong>%{count}</strong> opciones"
+            one: Elige <strong>1</strong> opción
+            other: Elige hasta <strong>%{count}</strong> opciones
           x_options:
-            one: "Elige <strong>1</strong> opción"
-            other: "Elige <strong>%{count}</strong> opciones"
-          between_min_and_max_options: "Elige entre <strong>%{min}</strong> y <strong>%{max}</strong> opciones"
+            one: Elige <strong>1</strong> opción
+            other: Elige <strong>%{count}</strong> opciones
+          between_min_and_max_options: Elige entre <strong>%{min}</strong> y <strong>%{max}</strong> opciones
       cast-votes:
-        title: "Votar"
+        title: Votar
         label: "¡Vota!"
       show-results:
-        title: "Mostrar los resultados de la encuesta"
-        label: "Mostrar resultados"
+        title: Mostrar los resultados de la encuesta
+        label: Mostrar resultados
       hide-results:
-        title: "Volver a los votos"
-        label: "Ocultar resultados"
+        title: Volver a los votos
+        label: Ocultar resultados
       open:
-        title: "Abrir encuesta"
-        label: "Abrir"
+        title: Abrir encuesta
+        label: Abrir
         confirm: "¿Seguro que quieres abrir esta encuesta?"
       close:
-        title: "Cerrar la encuesta"
-        label: "Cerrar"
+        title: Cerrar la encuesta
+        label: Cerrar
         confirm: "¿Seguro que quieres cerrar esta encuesta?"
-      error_while_toggling_status: "Lo sentimos, hubo un error al cambiar el estado de esta encuesta."
-      error_while_casting_votes: "Lo sentimos, hubo un error al registrar tus votos."
-      error_while_fetching_voters: "Lo sentimos, hubo un error al mostrar los votantes."
+      error_while_toggling_status: Lo sentimos, hubo un error al cambiar el estado de esta encuesta.
+      error_while_casting_votes: Lo sentimos, hubo un error al registrar tus votos.
+      error_while_fetching_voters: Lo sentimos, hubo un error al mostrar los votantes.
       ui_builder:
         title: Crear Encuesta
         insert: Insertar Encuesta

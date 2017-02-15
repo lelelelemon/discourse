@@ -7,6 +7,6 @@
 
 ar:
   site_settings:
-    enable_imgur: "فعّل واجهة برمجة التطبيقات لموقع Imgur للرفع، لا تستضف الملفات محلّيّا"
-    imgur_client_id: "معرّفك على imgur.com مطلوب لرفع الصور"
-    imgur_client_secret: "سرّ العميل (Client secret) على imgur.com. ليس مطلوبا حاليا لرفع الصور، ولكن قد يكون كذلك لاحقا."
+    enable_imgur: فعّل واجهة برمجة التطبيقات لموقع Imgur للرفع، لا تستضف الملفات محلّيّا
+    imgur_client_id: معرّفك على imgur.com مطلوب لرفع الصور
+    imgur_client_secret: سرّ العميل (Client secret) على imgur.com. ليس مطلوبا حاليا لرفع الصور، ولكن قد يكون كذلك لاحقا.

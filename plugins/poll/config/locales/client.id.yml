@@ -9,36 +9,61 @@ id:
   js:
     poll:
       voters:
-        other: "pemilih"
+        one: voter
+        other: pemilih
       total_votes:
-        other: "jumlah suara"
-      average_rating: "Rata-rata rating: <strong>%{average}</strong>."
+        one: total vote
+        other: jumlah suara
+      average_rating: 'Rata-rata rating: <strong>%{average}</strong>.'
       public:
-        title: "Polling ini publik"
+        title: Polling ini publik
       multiple:
         help:
           at_least_min_options:
-            other: "Pilih setidaknya <strong>%{count}</strong> pilihan"
+            one: Choose at least <strong>1</strong> option
+            other: Pilih setidaknya <strong>%{count}</strong> pilihan
           up_to_max_options:
-            other: "Pilih sampai <strong<%{count}</strong> pilihan"
+            one: Choose up to <strong>1</strong> option
+            other: Pilih sampai <strong<%{count}</strong> pilihan
           x_options:
-            other: "Pilih <strong>%{count}</strong> pilihan"
-          between_min_and_max_options: "Pilih antara <strong>%{min}</strong> dan <strong>%{max}</strong> pilihan"
+            one: Choose <strong>1</strong> option
+            other: Pilih <strong>%{count}</strong> pilihan
+          between_min_and_max_options: Pilih antara <strong>%{min}</strong> dan <strong>%{max}</strong> pilihan
       cast-votes:
-        title: "Gunakan suaramu"
-        label: "Pilih sekarang!"
+        title: Gunakan suaramu
+        label: Pilih sekarang!
       show-results:
-        title: "Lihat hasil polling"
-        label: "Lihat hasil"
+        title: Lihat hasil polling
+        label: Lihat hasil
       hide-results:
-        title: "Kembali ke suaramu"
-        label: "Sembunyikan hasil"
+        title: Kembali ke suaramu
+        label: Sembunyikan hasil
       open:
-        title: "Buka Polling"
-        label: "Buka"
-        confirm: "Apakah Anda yakin  ingin membuka akun ini?"
+        title: Buka Polling
+        label: Buka
+        confirm: Apakah Anda yakin  ingin membuka akun ini?
       close:
-        title: "Tutup polling"
-        label: "Tutup"
-        confirm: "Apakah Anda yakin  ingin menutup akun ini?"
-      error_while_toggling_status: "Maaf, telah terjadi kesalahan pengalihan status dari pemilihan ini."
+        title: Tutup polling
+        label: Tutup
+        confirm: Apakah Anda yakin  ingin menutup akun ini?
+      error_while_toggling_status: Maaf, telah terjadi kesalahan pengalihan status dari pemilihan ini.
+      error_while_casting_votes: Sorry, there was an error casting your votes.
+      error_while_fetching_voters: Sorry, there was an error displaying the voters.
+      ui_builder:
+        title: Build Poll
+        insert: Insert Poll
+        help:
+          options_count: Enter at least 2 options
+        poll_type:
+          label: Type
+          regular: Single Choice
+          multiple: Multiple Choice
+          number: Number Rating
+        poll_config:
+          max: Max
+          min: Min
+          step: Step
+        poll_public:
+          label: Show who voted
+        poll_options:
+          label: Enter one poll option per line

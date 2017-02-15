@@ -7,6 +7,6 @@
 
 nb_NO:
   site_settings:
-    enable_imgur: "Aktiver imgurs API for opplasting, ikke lagre filene lokalt"
-    imgur_client_id: "Din klient-ID for imgur.com, påkrevet for at bildeopplasting skal fungere"
-    imgur_client_secret: "Din client secret for imgur.com. Denne er for øyeblikket ikke påkrevet for opplasting av bilder, men kan bli det i fremtiden."
+    enable_imgur: Aktiver imgurs API for opplasting, ikke lagre filene lokalt
+    imgur_client_id: Din klient-ID for imgur.com, påkrevet for at bildeopplasting skal fungere
+    imgur_client_secret: Din client secret for imgur.com. Denne er for øyeblikket ikke påkrevet for opplasting av bilder, men kan bli det i fremtiden.

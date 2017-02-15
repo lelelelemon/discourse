@@ -8,31 +8,64 @@
 uk:
   js:
     poll:
+      voters:
+        one: voter
+        other: voters
       total_votes:
-        one: "голос"
-        few: "голосів"
-        other: "голоси"
-      average_rating: "Середній рейтинг: <strong>%{average}</strong>."
+        one: голос
+        other: голоси
+        few: голосів
+      average_rating: 'Середній рейтинг: <strong>%{average}</strong>.'
+      public:
+        title: Votes are public.
       multiple:
         help:
           at_least_min_options:
-            one: "Виберіть хоча б <strong>1</strong> варіант"
-            few: "Виберіть хоча б <strong>%{count}</strong> варіантів"
-            other: "Виберіть хоча б <strong>%{count}</strong> варіанти"
+            one: Виберіть хоча б <strong>1</strong> варіант
+            other: Виберіть хоча б <strong>%{count}</strong> варіанти
+            few: Виберіть хоча б <strong>%{count}</strong> варіантів
+          up_to_max_options:
+            one: Choose up to <strong>1</strong> option
+            other: Choose up to <strong>%{count}</strong> options
+          x_options:
+            one: Choose <strong>1</strong> option
+            other: Choose <strong>%{count}</strong> options
+          between_min_and_max_options: Choose between <strong>%{min}</strong> and <strong>%{max}</strong> options
       cast-votes:
-        label: "Проголосувати!"
+        title: Cast your votes
+        label: Проголосувати!
       show-results:
-        label: "Показати результати"
+        title: Display the poll results
+        label: Показати результати
       hide-results:
-        label: "Приховати результати"
+        title: Back to your votes
+        label: Приховати результати
       open:
-        label: "Відкрити"
+        title: Open the poll
+        label: Відкрити
+        confirm: Are you sure you want to open this poll?
       close:
-        label: "Закрити"
+        title: Close the poll
+        label: Закрити
+        confirm: Are you sure you want to close this poll?
+      error_while_toggling_status: Sorry, there was an error toggling the status of this poll.
+      error_while_casting_votes: Sorry, there was an error casting your votes.
+      error_while_fetching_voters: Sorry, there was an error displaying the voters.
       ui_builder:
+        title: Build Poll
+        insert: Insert Poll
+        help:
+          options_count: Enter at least 2 options
         poll_type:
           label: Тип
+          regular: Single Choice
+          multiple: Multiple Choice
+          number: Number Rating
         poll_config:
           max: Макс
           min: Мін
           step: Крок
+        poll_public:
+          label: Show who voted
+        poll_options:
+          label: Enter one poll option per line

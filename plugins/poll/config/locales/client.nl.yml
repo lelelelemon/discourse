@@ -9,46 +9,46 @@ nl:
   js:
     poll:
       voters:
-        one: "stemmer"
-        other: "stemmers"
+        one: stemmer
+        other: stemmers
       total_votes:
-        one: "totale stem"
-        other: "totale stemmen"
-      average_rating: "Gemiddelde beoordeling: <strong>%{average}</strong>."
+        one: totale stem
+        other: totale stemmen
+      average_rating: 'Gemiddelde beoordeling: <strong>%{average}</strong>.'
       public:
-        title: "Stemmen zijn openbaar."
+        title: Stemmen zijn openbaar.
       multiple:
         help:
           at_least_min_options:
-            one: "Kies minstens <strong>1</strong> optie"
-            other: "Kies minstens <strong>%{count}</strong> opties"
+            one: Kies minstens <strong>1</strong> optie
+            other: Kies minstens <strong>%{count}</strong> opties
           up_to_max_options:
-            one: "Kies maximaal <strong>1</string> optie"
-            other: "Kies maximaal <strong>%{count}</string> opties"
+            one: Kies maximaal <strong>1</string> optie
+            other: Kies maximaal <strong>%{count}</string> opties
           x_options:
-            one: "Kies <strong>1</strong> optie"
-            other: "Kies <strong>%{count}</strong> opties"
-          between_min_and_max_options: "Kies <strong>%{min}</strong> tot <strong>%{max}</strong> opties"
+            one: Kies <strong>1</strong> optie
+            other: Kies <strong>%{count}</strong> opties
+          between_min_and_max_options: Kies <strong>%{min}</strong> tot <strong>%{max}</strong> opties
       cast-votes:
-        title: "Breng je stemmen uit"
-        label: "Stem nu!"
+        title: Breng je stemmen uit
+        label: Stem nu!
       show-results:
-        title: "De pollresultaten weergeven"
-        label: "Resultaten tonen"
+        title: De pollresultaten weergeven
+        label: Resultaten tonen
       hide-results:
-        title: "Terug naar uw stemmen"
-        label: "Resultaten verbergen"
+        title: Terug naar uw stemmen
+        label: Resultaten verbergen
       open:
-        title: "De poll openen"
-        label: "Openen"
-        confirm: "Weet u zeker dat u deze poll wilt openen?"
+        title: De poll openen
+        label: Openen
+        confirm: Weet u zeker dat u deze poll wilt openen?
       close:
-        title: "De poll sluiten"
-        label: "Sluiten"
-        confirm: "Weet u zeker dat u deze poll wilt sluiten?"
-      error_while_toggling_status: "Sorry, er is een fout opgetreden bij het omschakelen van de status van deze poll."
-      error_while_casting_votes: "Sorry, er is een fout opgetreden bij uitbrengen van uw stemmen."
-      error_while_fetching_voters: "Sorry, er is een fout opgetreden bij het weergeven van de stemmers."
+        title: De poll sluiten
+        label: Sluiten
+        confirm: Weet u zeker dat u deze poll wilt sluiten?
+      error_while_toggling_status: Sorry, er is een fout opgetreden bij het omschakelen van de status van deze poll.
+      error_while_casting_votes: Sorry, er is een fout opgetreden bij uitbrengen van uw stemmen.
+      error_while_fetching_voters: Sorry, er is een fout opgetreden bij het weergeven van de stemmers.
       ui_builder:
         title: Poll aanmaken
         insert: Poll invoegen

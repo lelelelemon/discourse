@@ -9,28 +9,61 @@ ko:
   js:
     poll:
       voters:
-        other: "투표자"
+        one: voter
+        other: 투표자
       total_votes:
-        other: "전체 투표"
-      average_rating: "평균: <strong>%{average}</strong>."
+        one: total vote
+        other: 전체 투표
+      average_rating: '평균: <strong>%{average}</strong>.'
+      public:
+        title: Votes are public.
       multiple:
         help:
           at_least_min_options:
-            other: "최소 <strong>%{count}</strong>개의 옵션을 선택해야합니다."
+            one: Choose at least <strong>1</strong> option
+            other: 최소 <strong>%{count}</strong>개의 옵션을 선택해야합니다.
+          up_to_max_options:
+            one: Choose up to <strong>1</strong> option
+            other: Choose up to <strong>%{count}</strong> options
+          x_options:
+            one: Choose <strong>1</strong> option
+            other: Choose <strong>%{count}</strong> options
+          between_min_and_max_options: Choose between <strong>%{min}</strong> and <strong>%{max}</strong> options
       cast-votes:
-        title: "표 던지기"
-        label: "지금 투표!"
+        title: 표 던지기
+        label: 지금 투표!
       show-results:
-        title: "투표 결과 표시"
-        label: "결과 보기"
+        title: 투표 결과 표시
+        label: 결과 보기
       hide-results:
-        title: "투표로 돌아가기"
-        label: "결과 숨기기"
+        title: 투표로 돌아가기
+        label: 결과 숨기기
       open:
-        title: "투표 열기"
-        label: "열기"
-        confirm: "투표를 여시겠습니까?"
+        title: 투표 열기
+        label: 열기
+        confirm: 투표를 여시겠습니까?
       close:
-        title: "투표 닫기"
-        label: "닫기"
-        confirm: "정말 이 투표를 닫으시겠어요?"
+        title: 투표 닫기
+        label: 닫기
+        confirm: 정말 이 투표를 닫으시겠어요?
+      error_while_toggling_status: Sorry, there was an error toggling the status of this poll.
+      error_while_casting_votes: Sorry, there was an error casting your votes.
+      error_while_fetching_voters: Sorry, there was an error displaying the voters.
+      ui_builder:
+        title: Build Poll
+        insert: Insert Poll
+        help:
+          options_count: Enter at least 2 options
+        poll_type:
+          label: Type
+          regular: Single Choice
+          multiple: Multiple Choice
+          number: Number Rating
+        poll_config:
+          max: Max
+          min: Min
+          step: Step
+        poll_public:
+          label: Show who voted
+        poll_options:
+          label: Enter one poll option per line

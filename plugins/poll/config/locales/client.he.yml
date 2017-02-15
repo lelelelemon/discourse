@@ -9,46 +9,46 @@ he:
   js:
     poll:
       voters:
-        one: "מצביע"
-        other: "מצביעים"
+        one: מצביע
+        other: מצביעים
       total_votes:
-        one: "מספר הצבעות כולל"
-        other: "מספר הצבעות כולל"
-      average_rating: "דירוג ממוצע: <strong>%{average}</strong>."
+        one: מספר הצבעות כולל
+        other: מספר הצבעות כולל
+      average_rating: 'דירוג ממוצע: <strong>%{average}</strong>.'
       public:
-        title: "הצבעות הן פומביות."
+        title: הצבעות הן פומביות.
       multiple:
         help:
           at_least_min_options:
-            one: "בחרו לפחות אפשרות אחת"
-            other: "בחרו לפחות <strong>%{count}</strong> אפשרויות"
+            one: בחרו לפחות אפשרות אחת
+            other: בחרו לפחות <strong>%{count}</strong> אפשרויות
           up_to_max_options:
-            one: "בחרו לכל היותר אפשרות אחת."
-            other: "בחרו עד <strong>%{count}</strong> אפשרויות"
+            one: בחרו לכל היותר אפשרות אחת.
+            other: בחרו עד <strong>%{count}</strong> אפשרויות
           x_options:
-            one: "בחרו אפשרות אחת"
-            other: "בחרו <strong>%{count}</strong> אפשרויות"
-          between_min_and_max_options: "בחרו בין <strong>%{min}</strong> ל-<strong>%{max}</strong> אפשרויות"
+            one: בחרו אפשרות אחת
+            other: בחרו <strong>%{count}</strong> אפשרויות
+          between_min_and_max_options: בחרו בין <strong>%{min}</strong> ל-<strong>%{max}</strong> אפשרויות
       cast-votes:
-        title: "הצביעו"
-        label: "הצביעו עכשיו!"
+        title: הצביעו
+        label: הצביעו עכשיו!
       show-results:
-        title: "להציג את תוצאות הסקר"
-        label: "הצגת תוצאות"
+        title: להציג את תוצאות הסקר
+        label: הצגת תוצאות
       hide-results:
-        title: "חזרה להצבעות שלך"
-        label: "הסתרת תוצאות"
+        title: חזרה להצבעות שלך
+        label: הסתרת תוצאות
       open:
-        title: "פתיחת הסקר"
-        label: "פתיחה"
-        confirm: "האם אתם בטוחים שאתם רוצים לפתוח את הסקר הזה?"
+        title: פתיחת הסקר
+        label: פתיחה
+        confirm: האם אתם בטוחים שאתם רוצים לפתוח את הסקר הזה?
       close:
-        title: "סגירת הסקר"
-        label: "סגירה"
-        confirm: "האם אתם בטוחים שאתם רוצים לסגור סקר זה?"
-      error_while_toggling_status: "מצטערים, חלה שגיאה בשינוי המצב של סקר זה."
-      error_while_casting_votes: "מצטערים, ארעה שגיאה בהצבעתכם."
-      error_while_fetching_voters: "מצטערים, ארעה שגיאה בהצגת המצביעים."
+        title: סגירת הסקר
+        label: סגירה
+        confirm: האם אתם בטוחים שאתם רוצים לסגור סקר זה?
+      error_while_toggling_status: מצטערים, חלה שגיאה בשינוי המצב של סקר זה.
+      error_while_casting_votes: מצטערים, ארעה שגיאה בהצבעתכם.
+      error_while_fetching_voters: מצטערים, ארעה שגיאה בהצגת המצביעים.
       ui_builder:
         title: בניית סקר
         insert: הכנסת סקר

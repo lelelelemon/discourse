@@ -7,6 +7,6 @@
 
 da:
   site_settings:
-    enable_imgur: "Slå imgur api til for upload, gem ikke filer lokalt"
-    imgur_client_id: "Dit imgur.com klient ID, nødvendigt for billed upload funktionen"
-    imgur_client_secret: "Din imgur.com client secret. ikke nødvendig i øjeblikket for billed upload funktionen, men måske nødvendig i fremtiden."
+    enable_imgur: Slå imgur api til for upload, gem ikke filer lokalt
+    imgur_client_id: Dit imgur.com klient ID, nødvendigt for billed upload funktionen
+    imgur_client_secret: Din imgur.com client secret. ikke nødvendig i øjeblikket for billed upload funktionen, men måske nødvendig i fremtiden.

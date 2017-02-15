@@ -7,6 +7,6 @@
 
 sk:
   site_settings:
-    enable_imgur: "Zapnúť imgur api pre upload, nehostujte súbory lokálne"
-    imgur_client_id: "Vaše imgur.com klientské ID potrebné pre funkčnosť uploadu obrázku"
-    imgur_client_secret: "Váš imgur.com klientský kľúč. Nie je aktuálne potrebný pre funkčnosť uploadu obrázkov, ale je možné že v budúcnosti bude."
+    enable_imgur: Zapnúť imgur api pre upload, nehostujte súbory lokálne
+    imgur_client_id: Vaše imgur.com klientské ID potrebné pre funkčnosť uploadu obrázku
+    imgur_client_secret: Váš imgur.com klientský kľúč. Nie je aktuálne potrebný pre funkčnosť uploadu obrázkov, ale je možné že v budúcnosti bude.

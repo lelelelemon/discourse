@@ -9,46 +9,46 @@ fr:
   js:
     poll:
       voters:
-        one: "votant"
-        other: "votants"
+        one: votant
+        other: votants
       total_votes:
-        one: "vote au total"
-        other: "votes au total"
-      average_rating: "Notation moyenne : <strong>%{average}</strong>"
+        one: vote au total
+        other: votes au total
+      average_rating: 'Notation moyenne : <strong>%{average}</strong>'
       public:
-        title: "Les votes sont publics."
+        title: Les votes sont publics.
       multiple:
         help:
           at_least_min_options:
-            one: "Choisissez au moins <strong>1</strong> option"
-            other: "Choisissez au moins <strong>%{count}</strong> options"
+            one: Choisissez au moins <strong>1</strong> option
+            other: Choisissez au moins <strong>%{count}</strong> options
           up_to_max_options:
-            one: "Choisissez jusqu'à <strong>1</strong> option"
-            other: "Choisissez jusqu'à <strong>%{count}</strong> options"
+            one: Choisissez jusqu'à <strong>1</strong> option
+            other: Choisissez jusqu'à <strong>%{count}</strong> options
           x_options:
-            one: "Choisissez <strong>1</strong> option"
-            other: "Choisissez <strong>%{count}</strong> options"
-          between_min_and_max_options: "Choisissez entre <strong>%{min}</strong> et <strong>%{max}</strong> options"
+            one: Choisissez <strong>1</strong> option
+            other: Choisissez <strong>%{count}</strong> options
+          between_min_and_max_options: Choisissez entre <strong>%{min}</strong> et <strong>%{max}</strong> options
       cast-votes:
-        title: "Distribuez vos votes"
-        label: "Votez maintenant !"
+        title: Distribuez vos votes
+        label: Votez maintenant !
       show-results:
-        title: "Afficher les résultats du sondage"
-        label: "Afficher les résultats"
+        title: Afficher les résultats du sondage
+        label: Afficher les résultats
       hide-results:
-        title: "Retourner au vote"
-        label: "Masquer les résultats"
+        title: Retourner au vote
+        label: Masquer les résultats
       open:
-        title: "Ouvrir le sondage"
-        label: "Ouvrir"
-        confirm: "Êtes-vous sûr de vouloir ouvrir ce sondage ?"
+        title: Ouvrir le sondage
+        label: Ouvrir
+        confirm: Êtes-vous sûr de vouloir ouvrir ce sondage ?
       close:
-        title: "Fermer le sondage"
-        label: "Fermer"
-        confirm: "Êtes-vous sûr de vouloir fermer ce sondage ?"
-      error_while_toggling_status: "Désolé, il y a eu une erreur lors du changement de statut de ce sondage."
-      error_while_casting_votes: "Désolé, il y a eu une erreur lors de l'envoi de vos votes."
-      error_while_fetching_voters: "Désolé, il y a eu une erreur lors de l'affichage des votants."
+        title: Fermer le sondage
+        label: Fermer
+        confirm: Êtes-vous sûr de vouloir fermer ce sondage ?
+      error_while_toggling_status: Désolé, il y a eu une erreur lors du changement de statut de ce sondage.
+      error_while_casting_votes: Désolé, il y a eu une erreur lors de l'envoi de vos votes.
+      error_while_fetching_voters: Désolé, il y a eu une erreur lors de l'affichage des votants.
       ui_builder:
         title: Créer un sondage
         insert: Insérer le sondage

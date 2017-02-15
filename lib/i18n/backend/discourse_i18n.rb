@@ -7,9 +7,6 @@ module I18n
       include I18n::Backend::Pluralization
 
       def available_locales
-        # in case you are wondering this is:
-        # Dir.glob( File.join(Rails.root, 'config', 'locales', 'client.*.yml') )
-        #    .map {|x| x.split('.')[-2]}.sort
         LocaleSiteSetting.supported_locales.map(&:to_sym)
       end
 
