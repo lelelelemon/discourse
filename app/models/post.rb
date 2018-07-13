@@ -491,7 +491,7 @@ class Post < ActiveRecord::Base
     val = $redis.get("estimated_posts_per_day")
     return val.to_i if val
 
-    posts_per_day = Topic.listable_topics.secured.joins(:posts).merge(Post.created_since(30.days.ago)).count / 30
+    posts_per_day = Topic.listable_topics.secured.joins(:posts).merge(Post.created_since(30.days.ago)).limit(3000).count / 30
     $redis.setex("estimated_posts_per_day", 1.day.to_i, posts_per_day.to_s)
     posts_per_day
 
